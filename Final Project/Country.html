@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>COVID-19 and SARS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript"
+	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+<body id="myPage">
+<script src="country_compare.js"></script>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="COVID-19.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">COVID-19</a>
+  <a href="SARS.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">SARS</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Comparsion <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="Country.html" class="w3-bar-item w3-button">Country</a>
+      <a href="Development_trend.html" class="w3-bar-item w3-button">Development Trend</a>
+      <a href="Rate.html" class="w3-bar-item w3-button">Rate</a>
+    </div>
+  </div>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="COVID-19.html" class="w3-bar-item w3-button">COVID-19</a>
+    <a href="SARS.html" class="w3-bar-item w3-button">SARS</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+    <img src="/images/virus1.jpg" alt="boat" style="width:100%;min-height:150px;max-height:300px;">
+    <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+        <h1 onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS"> Visualization of COVID-19 and SARS</h1>
+    </div>
+</div>
+
+
+
+
+<!-- Content -->
+<div id="content">
+    <div id="vizContainer" style="width:1000px; height:1000px;"></div>
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-14 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar"><i class="fa fa-info w3-text-teal w3-xlarge"></i> Contact Information</span></div>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Washington, DC</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> xhuang6@gwu.edu</p>
+    </div>
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar"><i class="fa fa-git w3-text-teal w3-xlarge"></i> Published</span></div>
+        <h4> Github io & Zenodo<h4> 
+        <h5><a href="https://xhuang222.github.io/G20-spending-analysis/project/index.html">xhuang222.github.io</a><h5>
+        <h5><a href="https://zenodo.org/record/3883436#.XtxWl2pKjBI">zenodo.org</a><h5>
+    </div>
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar"><i class="fa fa-external-link w3-text-teal w3-xlarge"></i> Useful Link</span></div>
+        <h4>W3schools & Google API<h4> 
+        <h5><a href="https://www.w3schools.com/">w3schools.com</a><h5>
+        <h5><a href="https://developers.google.com/chart/">developers.google.com/chart</a><h5>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div id="footer">   
+    Copyright&copy;
+    <script>
+        var d= new Date();
+        document.write(d.getFullYear());
+    </script>
+                 | HTML5
+                 | XH
+</div><!-- footer -->
+
+<script src="navigation.js"></script>
+
+
+</body>
+</html>

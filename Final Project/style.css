@@ -1,0 +1,50 @@
+html {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding: 0 10px 16px 10px;
+	line-height: 1.7em;
+}
+
+h2 {
+    margin: 0;
+	padding: 0 0 5px 10px;
+}
+
+.numbertext {
+    margin: 0;
+	padding: 0 0 5px 10px;
+}
+
+.slideshow-container a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+.slideshow-container  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.slideshow-container .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+.slideshow-container  .next {
+    background-color: green;
+    color: white;
+  }
+
+
+
+.slideshow-container  .round {
+    border-radius: 50%;
+  }
