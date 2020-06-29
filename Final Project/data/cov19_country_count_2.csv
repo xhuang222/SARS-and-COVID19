@@ -1,0 +1,1496 @@
+US,Confirmed,2137731,1
+US,Deaths,116963,1
+US,Recovered,583503,1
+US,Active,1437265,1
+Brazil,Confirmed,923189,1
+Brazil,Deaths,45241,1
+Brazil,Recovered,490005,1
+Brazil,Active,387943,1
+Russia,Confirmed,544725,1
+Russia,Deaths,7274,1
+Russia,Recovered,293780,1
+Russia,Active,243671,1
+India,Confirmed,354065,1
+India,Deaths,11903,1
+India,Recovered,186935,1
+India,Active,155227,1
+United Kingdom,Confirmed,299600,1
+United Kingdom,Deaths,42054,1
+United Kingdom,Recovered,1293,1
+United Kingdom,Active,256253,1
+Spain,Confirmed,244328,1
+Spain,Deaths,27136,1
+Spain,Recovered,150376,1
+Spain,Active,66816,1
+Italy,Confirmed,237500,1
+Italy,Deaths,34405,1
+Italy,Recovered,178526,1
+Italy,Active,24569,1
+Peru,Confirmed,237156,1
+Peru,Deaths,7056,1
+Peru,Recovered,125205,1
+Peru,Active,104895,1
+France,Confirmed,194347,1
+France,Deaths,29550,1
+France,Recovered,73459,1
+France,Active,91338,1
+Iran,Confirmed,192439,1
+Iran,Deaths,9065,1
+Iran,Recovered,152675,1
+Iran,Active,30699,1
+Germany,Confirmed,188252,1
+Germany,Deaths,8820,1
+Germany,Recovered,172842,1
+Germany,Active,6590,1
+Chile,Confirmed,184449,1
+Chile,Deaths,3383,1
+Chile,Recovered,156232,1
+Chile,Active,24834,1
+Turkey,Confirmed,181298,1
+Turkey,Deaths,4842,1
+Turkey,Recovered,153379,1
+Turkey,Active,23077,1
+Mexico,Confirmed,154863,1
+Mexico,Deaths,18310,1
+Mexico,Recovered,115394,1
+Mexico,Active,21159,1
+Pakistan,Confirmed,154760,1
+Pakistan,Deaths,2975,1
+Pakistan,Recovered,58437,1
+Pakistan,Active,93348,1
+Saudi Arabia,Confirmed,136315,1
+Saudi Arabia,Deaths,1052,1
+Saudi Arabia,Recovered,89540,1
+Saudi Arabia,Active,45723,1
+Canada,Confirmed,101074,1
+Canada,Deaths,8270,1
+Canada,Recovered,0,1
+Canada,Active,92804,1
+Bangladesh,Confirmed,94481,1
+Bangladesh,Deaths,1262,1
+Bangladesh,Recovered,36264,1
+Bangladesh,Active,56955,1
+China,Confirmed,84422,1
+China,Deaths,4638,1
+China,Recovered,79493,1
+China,Active,291,1
+Qatar,Confirmed,82077,1
+Qatar,Deaths,80,1
+Qatar,Recovered,60461,1
+Qatar,Active,21536,1
+South Africa,Confirmed,76334,1
+South Africa,Deaths,1625,1
+South Africa,Recovered,42063,1
+South Africa,Active,32646,1
+Belgium,Confirmed,60155,1
+Belgium,Deaths,9663,1
+Belgium,Recovered,16625,1
+Belgium,Active,33867,1
+Belarus,Confirmed,55369,1
+Belarus,Deaths,318,1
+Belarus,Recovered,31273,1
+Belarus,Active,23778,1
+Sweden,Confirmed,53323,1
+Sweden,Deaths,4939,1
+Sweden,Recovered,0,1
+Sweden,Active,48384,1
+Colombia,Confirmed,53211,1
+Colombia,Deaths,1808,1
+Colombia,Recovered,19986,1
+Colombia,Active,31417,1
+Netherlands,Confirmed,49288,1
+Netherlands,Deaths,6089,1
+Netherlands,Recovered,179,1
+Netherlands,Active,43020,1
+Ecuador,Confirmed,47943,1
+Ecuador,Deaths,3970,1
+Ecuador,Recovered,23684,1
+Ecuador,Active,20289,1
+Egypt,Confirmed,47856,1
+Egypt,Deaths,1766,1
+Egypt,Recovered,12730,1
+Egypt,Active,33360,1
+United Arab Emirates,Confirmed,42982,1
+United Arab Emirates,Deaths,293,1
+United Arab Emirates,Recovered,28861,1
+United Arab Emirates,Active,13828,1
+Singapore,Confirmed,40969,1
+Singapore,Deaths,26,1
+Singapore,Recovered,31163,1
+Singapore,Active,9780,1
+Indonesia,Confirmed,40400,1
+Indonesia,Deaths,2231,1
+Indonesia,Recovered,15703,1
+Indonesia,Active,22466,1
+Portugal,Confirmed,37336,1
+Portugal,Deaths,1522,1
+Portugal,Recovered,23212,1
+Portugal,Active,12602,1
+Kuwait,Confirmed,36958,1
+Kuwait,Deaths,303,1
+Kuwait,Recovered,28206,1
+Kuwait,Active,8449,1
+Argentina,Confirmed,34159,1
+Argentina,Deaths,878,1
+Argentina,Recovered,10174,1
+Argentina,Active,23107,1
+Ukraine,Confirmed,33209,1
+Ukraine,Deaths,922,1
+Ukraine,Recovered,15054,1
+Ukraine,Active,17233,1
+Switzerland,Confirmed,31154,1
+Switzerland,Deaths,1954,1
+Switzerland,Recovered,28900,1
+Switzerland,Active,300,1
+Poland,Confirmed,30195,1
+Poland,Deaths,1272,1
+Poland,Recovered,14654,1
+Poland,Active,14269,1
+Philippines,Confirmed,26781,1
+Philippines,Deaths,1103,1
+Philippines,Recovered,6552,1
+Philippines,Active,19126,1
+Afghanistan,Confirmed,26310,1
+Afghanistan,Deaths,491,1
+Afghanistan,Recovered,5508,1
+Afghanistan,Active,20311,1
+Ireland,Confirmed,25334,1
+Ireland,Deaths,1709,1
+Ireland,Recovered,22698,1
+Ireland,Active,927,1
+Oman,Confirmed,25269,1
+Oman,Deaths,114,1
+Oman,Recovered,11089,1
+Oman,Active,14066,1
+Dominican Republic,Confirmed,23686,1
+Dominican Republic,Deaths,615,1
+Dominican Republic,Recovered,14133,1
+Dominican Republic,Active,8938,1
+Iraq,Confirmed,22700,1
+Iraq,Deaths,712,1
+Iraq,Recovered,9862,1
+Iraq,Active,12126,1
+Romania,Confirmed,22415,1
+Romania,Deaths,1437,1
+Romania,Recovered,16071,1
+Romania,Active,4907,1
+Panama,Confirmed,21962,1
+Panama,Deaths,457,1
+Panama,Recovered,13774,1
+Panama,Active,7731,1
+Bolivia,Confirmed,19883,1
+Bolivia,Deaths,659,1
+Bolivia,Recovered,3752,1
+Bolivia,Active,15472,1
+Bahrain,Confirmed,19553,1
+Bahrain,Deaths,47,1
+Bahrain,Recovered,13866,1
+Bahrain,Active,5640,1
+Israel,Confirmed,19495,1
+Israel,Deaths,302,1
+Israel,Recovered,15449,1
+Israel,Active,3744,1
+Armenia,Confirmed,17489,1
+Armenia,Deaths,293,1
+Armenia,Recovered,6571,1
+Armenia,Active,10625,1
+Japan,Confirmed,17484,1
+Japan,Deaths,934,1
+Japan,Recovered,15652,1
+Japan,Active,898,1
+Austria,Confirmed,17189,1
+Austria,Deaths,681,1
+Austria,Recovered,16089,1
+Austria,Active,419,1
+Nigeria,Confirmed,17148,1
+Nigeria,Deaths,455,1
+Nigeria,Recovered,5623,1
+Nigeria,Active,11070,1
+Kazakhstan,Confirmed,15542,1
+Kazakhstan,Deaths,88,1
+Kazakhstan,Recovered,9647,1
+Kazakhstan,Active,5807,1
+Denmark,Confirmed,12437,1
+Denmark,Deaths,598,1
+Denmark,Recovered,11312,1
+Denmark,Active,527,1
+Serbia,Confirmed,12426,1
+Serbia,Deaths,256,1
+Serbia,Recovered,11624,1
+Serbia,Active,546,1
+Moldova,Confirmed,12254,1
+Moldova,Deaths,423,1
+Moldova,Recovered,6901,1
+Moldova,Active,4930,1
+South Korea,Confirmed,12198,1
+South Korea,Deaths,279,1
+South Korea,Recovered,10774,1
+South Korea,Active,1145,1
+Ghana,Confirmed,12193,1
+Ghana,Deaths,58,1
+Ghana,Recovered,4326,1
+Ghana,Active,7809,1
+Algeria,Confirmed,11147,1
+Algeria,Deaths,788,1
+Algeria,Recovered,7842,1
+Algeria,Active,2517,1
+Guatemala,Confirmed,10706,1
+Guatemala,Deaths,418,1
+Guatemala,Recovered,2096,1
+Guatemala,Active,8192,1
+Azerbaijan,Confirmed,10662,1
+Azerbaijan,Deaths,126,1
+Azerbaijan,Recovered,5948,1
+Azerbaijan,Active,4588,1
+Czechia,Confirmed,10111,1
+Czechia,Deaths,331,1
+Czechia,Recovered,7358,1
+Czechia,Active,2422,1
+Cameroon,Confirmed,9864,1
+Cameroon,Deaths,276,1
+Cameroon,Recovered,5570,1
+Cameroon,Active,4018,1
+Honduras,Confirmed,9656,1
+Honduras,Deaths,330,1
+Honduras,Recovered,1075,1
+Honduras,Active,8251,1
+Morocco,Confirmed,8931,1
+Morocco,Deaths,212,1
+Morocco,Recovered,7937,1
+Morocco,Active,782,1
+Norway,Confirmed,8660,1
+Norway,Deaths,242,1
+Norway,Recovered,8138,1
+Norway,Active,280,1
+Malaysia,Confirmed,8505,1
+Malaysia,Deaths,121,1
+Malaysia,Recovered,7733,1
+Malaysia,Active,651,1
+Sudan,Confirmed,7740,1
+Sudan,Deaths,477,1
+Sudan,Recovered,2820,1
+Sudan,Active,4443,1
+Australia,Confirmed,7370,1
+Australia,Deaths,102,1
+Australia,Recovered,6861,1
+Australia,Active,407,1
+Finland,Confirmed,7112,1
+Finland,Deaths,326,1
+Finland,Recovered,6200,1
+Finland,Active,586,1
+Nepal,Confirmed,6591,1
+Nepal,Deaths,19,1
+Nepal,Recovered,1158,1
+Nepal,Active,5414,1
+Cote d'Ivoire,Confirmed,5679,1
+Cote d'Ivoire,Deaths,46,1
+Cote d'Ivoire,Recovered,2637,1
+Cote d'Ivoire,Active,2996,1
+Uzbekistan,Confirmed,5493,1
+Uzbekistan,Deaths,19,1
+Uzbekistan,Recovered,4096,1
+Uzbekistan,Active,1378,1
+Senegal,Confirmed,5247,1
+Senegal,Deaths,70,1
+Senegal,Recovered,3525,1
+Senegal,Active,1652,1
+Tajikistan,Confirmed,5160,1
+Tajikistan,Deaths,50,1
+Tajikistan,Recovered,3624,1
+Tajikistan,Active,1486,1
+Congo (Kinshasa),Confirmed,4974,1
+Congo (Kinshasa),Deaths,112,1
+Congo (Kinshasa),Recovered,628,1
+Congo (Kinshasa),Active,4234,1
+Guinea,Confirmed,4639,1
+Guinea,Deaths,26,1
+Guinea,Recovered,3327,1
+Guinea,Active,1286,1
+Haiti,Confirmed,4547,1
+Haiti,Deaths,80,1
+Haiti,Recovered,24,1
+Haiti,Active,4443,1
+Djibouti,Confirmed,4539,1
+Djibouti,Deaths,43,1
+Djibouti,Recovered,3324,1
+Djibouti,Active,1172,1
+North Macedonia,Confirmed,4299,1
+North Macedonia,Deaths,201,1
+North Macedonia,Recovered,1757,1
+North Macedonia,Active,2341,1
+Gabon,Confirmed,4114,1
+Gabon,Deaths,29,1
+Gabon,Recovered,1432,1
+Gabon,Active,2653,1
+Hungary,Confirmed,4077,1
+Hungary,Deaths,565,1
+Hungary,Recovered,2516,1
+Hungary,Active,996,1
+Luxembourg,Confirmed,4075,1
+Luxembourg,Deaths,110,1
+Luxembourg,Recovered,3933,1
+Luxembourg,Active,32,1
+El Salvador,Confirmed,3941,1
+El Salvador,Deaths,76,1
+El Salvador,Recovered,2041,1
+El Salvador,Active,1824,1
+Kenya,Confirmed,3860,1
+Kenya,Deaths,105,1
+Kenya,Recovered,1328,1
+Kenya,Active,2427,1
+Ethiopia,Confirmed,3630,1
+Ethiopia,Deaths,61,1
+Ethiopia,Recovered,738,1
+Ethiopia,Active,2831,1
+Bulgaria,Confirmed,3453,1
+Bulgaria,Deaths,181,1
+Bulgaria,Recovered,1817,1
+Bulgaria,Active,1455,1
+Venezuela,Confirmed,3150,1
+Venezuela,Deaths,27,1
+Venezuela,Recovered,835,1
+Venezuela,Active,2288,1
+Greece,Confirmed,3148,1
+Greece,Deaths,185,1
+Greece,Recovered,1374,1
+Greece,Active,1589,1
+Thailand,Confirmed,3135,1
+Thailand,Deaths,58,1
+Thailand,Recovered,2993,1
+Thailand,Active,84,1
+Bosnia and Herzegovina,Confirmed,3085,1
+Bosnia and Herzegovina,Deaths,168,1
+Bosnia and Herzegovina,Recovered,2178,1
+Bosnia and Herzegovina,Active,739,1
+Somalia,Confirmed,2658,1
+Somalia,Deaths,88,1
+Somalia,Recovered,649,1
+Somalia,Active,1921,1
+Kyrgyzstan,Confirmed,2562,1
+Kyrgyzstan,Deaths,30,1
+Kyrgyzstan,Recovered,1902,1
+Kyrgyzstan,Active,630,1
+Central African Republic,Confirmed,2410,1
+Central African Republic,Deaths,14,1
+Central African Republic,Recovered,396,1
+Central African Republic,Active,2000,1
+Cuba,Confirmed,2273,1
+Cuba,Deaths,84,1
+Cuba,Recovered,1994,1
+Cuba,Active,195,1
+Croatia,Confirmed,2255,1
+Croatia,Deaths,107,1
+Croatia,Recovered,2140,1
+Croatia,Active,8,1
+Maldives,Confirmed,2094,1
+Maldives,Deaths,8,1
+Maldives,Recovered,1670,1
+Maldives,Active,416,1
+Mauritania,Confirmed,2057,1
+Mauritania,Deaths,93,1
+Mauritania,Recovered,373,1
+Mauritania,Active,1591,1
+Estonia,Confirmed,1975,1
+Estonia,Deaths,69,1
+Estonia,Recovered,1728,1
+Estonia,Active,178,1
+Sri Lanka,Confirmed,1915,1
+Sri Lanka,Deaths,11,1
+Sri Lanka,Recovered,1371,1
+Sri Lanka,Active,533,1
+Mali,Confirmed,1885,1
+Mali,Deaths,104,1
+Mali,Recovered,1145,1
+Mali,Active,636,1
+Nicaragua,Confirmed,1823,1
+Nicaragua,Deaths,64,1
+Nicaragua,Recovered,1238,1
+Nicaragua,Active,521,1
+Iceland,Confirmed,1812,1
+Iceland,Deaths,10,1
+Iceland,Recovered,1796,1
+Iceland,Active,6,1
+Costa Rica,Confirmed,1796,1
+Costa Rica,Deaths,12,1
+Costa Rica,Recovered,794,1
+Costa Rica,Active,990,1
+Lithuania,Confirmed,1776,1
+Lithuania,Deaths,76,1
+Lithuania,Recovered,1441,1
+Lithuania,Active,259,1
+South Sudan,Confirmed,1776,1
+South Sudan,Deaths,30,1
+South Sudan,Recovered,58,1
+South Sudan,Active,1688,1
+Albania,Confirmed,1672,1
+Albania,Deaths,37,1
+Albania,Recovered,1064,1
+Albania,Active,571,1
+Equatorial Guinea,Confirmed,1664,1
+Equatorial Guinea,Deaths,32,1
+Equatorial Guinea,Recovered,515,1
+Equatorial Guinea,Active,1117,1
+Slovakia,Confirmed,1552,1
+Slovakia,Deaths,28,1
+Slovakia,Recovered,1426,1
+Slovakia,Active,98,1
+New Zealand,Confirmed,1506,1
+New Zealand,Deaths,22,1
+New Zealand,Recovered,1482,1
+New Zealand,Active,2,1
+Slovenia,Confirmed,1499,1
+Slovenia,Deaths,109,1
+Slovenia,Recovered,1359,1
+Slovenia,Active,31,1
+Guinea-Bissau,Confirmed,1492,1
+Guinea-Bissau,Deaths,15,1
+Guinea-Bissau,Recovered,153,1
+Guinea-Bissau,Active,1324,1
+Kosovo,Confirmed,1486,1
+Kosovo,Deaths,33,1
+Kosovo,Recovered,953,1
+Kosovo,Active,500,1
+Lebanon,Confirmed,1473,1
+Lebanon,Deaths,32,1
+Lebanon,Recovered,889,1
+Lebanon,Active,552,1
+Zambia,Confirmed,1405,1
+Zambia,Deaths,11,1
+Zambia,Recovered,1142,1
+Zambia,Active,252,1
+Madagascar,Confirmed,1317,1
+Madagascar,Deaths,12,1
+Madagascar,Recovered,417,1
+Madagascar,Active,888,1
+Paraguay,Confirmed,1303,1
+Paraguay,Deaths,13,1
+Paraguay,Recovered,699,1
+Paraguay,Active,591,1
+Sierra Leone,Confirmed,1225,1
+Sierra Leone,Deaths,51,1
+Sierra Leone,Recovered,686,1
+Sierra Leone,Active,488,1
+Tunisia,Confirmed,1125,1
+Tunisia,Deaths,49,1
+Tunisia,Recovered,1002,1
+Tunisia,Active,74,1
+Latvia,Confirmed,1098,1
+Latvia,Deaths,28,1
+Latvia,Recovered,875,1
+Latvia,Active,195,1
+Niger,Confirmed,1016,1
+Niger,Deaths,66,1
+Niger,Recovered,885,1
+Niger,Active,65,1
+Cyprus,Confirmed,985,1
+Cyprus,Deaths,18,1
+Cyprus,Recovered,816,1
+Cyprus,Active,151,1
+Jordan,Confirmed,981,1
+Jordan,Deaths,9,1
+Jordan,Recovered,693,1
+Jordan,Active,279,1
+Burkina Faso,Confirmed,895,1
+Burkina Faso,Deaths,53,1
+Burkina Faso,Recovered,807,1
+Burkina Faso,Active,35,1
+Yemen,Confirmed,885,1
+Yemen,Deaths,214,1
+Yemen,Recovered,91,1
+Yemen,Active,580,1
+Congo (Brazzaville),Confirmed,883,1
+Congo (Brazzaville),Deaths,27,1
+Congo (Brazzaville),Recovered,391,1
+Congo (Brazzaville),Active,465,1
+Georgia,Confirmed,879,1
+Georgia,Deaths,14,1
+Georgia,Recovered,724,1
+Georgia,Active,141,1
+Andorra,Confirmed,854,1
+Andorra,Deaths,52,1
+Andorra,Recovered,789,1
+Andorra,Active,13,1
+Chad,Confirmed,853,1
+Chad,Deaths,74,1
+Chad,Recovered,720,1
+Chad,Active,59,1
+Uruguay,Confirmed,849,1
+Uruguay,Deaths,24,1
+Uruguay,Recovered,801,1
+Uruguay,Active,24,1
+Cabo Verde,Confirmed,781,1
+Cabo Verde,Deaths,7,1
+Cabo Verde,Recovered,354,1
+Cabo Verde,Active,420,1
+Uganda,Confirmed,724,1
+Uganda,Deaths,0,1
+Uganda,Recovered,351,1
+Uganda,Active,373,1
+San Marino,Confirmed,694,1
+San Marino,Deaths,42,1
+San Marino,Recovered,590,1
+San Marino,Active,62,1
+Sao Tome and Principe,Confirmed,671,1
+Sao Tome and Principe,Deaths,12,1
+Sao Tome and Principe,Recovered,182,1
+Sao Tome and Principe,Active,477,1
+Malta,Confirmed,656,1
+Malta,Deaths,9,1
+Malta,Recovered,608,1
+Malta,Active,39,1
+Mozambique,Confirmed,638,1
+Mozambique,Deaths,4,1
+Mozambique,Recovered,0,1
+Mozambique,Active,634,1
+Rwanda,Confirmed,636,1
+Rwanda,Deaths,2,1
+Rwanda,Recovered,338,1
+Rwanda,Active,296,1
+Jamaica,Confirmed,621,1
+Jamaica,Deaths,10,1
+Jamaica,Recovered,449,1
+Jamaica,Active,162,1
+Malawi,Confirmed,564,1
+Malawi,Deaths,6,1
+Malawi,Recovered,73,1
+Malawi,Active,485,1
+Togo,Confirmed,537,1
+Togo,Deaths,13,1
+Togo,Recovered,344,1
+Togo,Active,180,1
+Benin,Confirmed,532,1
+Benin,Deaths,9,1
+Benin,Recovered,236,1
+Benin,Active,287,1
+Eswatini,Confirmed,520,1
+Eswatini,Deaths,4,1
+Eswatini,Recovered,259,1
+Eswatini,Active,257,1
+West Bank and Gaza,Confirmed,514,1
+West Bank and Gaza,Deaths,3,1
+West Bank and Gaza,Recovered,415,1
+West Bank and Gaza,Active,96,1
+Liberia,Confirmed,509,1
+Liberia,Deaths,33,1
+Liberia,Recovered,222,1
+Liberia,Active,254,1
+Tanzania,Confirmed,509,1
+Tanzania,Deaths,21,1
+Tanzania,Recovered,183,1
+Tanzania,Active,305,1
+Libya,Confirmed,484,1
+Libya,Deaths,10,1
+Libya,Recovered,76,1
+Libya,Active,398,1
+Taiwan*,Confirmed,445,1
+Taiwan*,Deaths,7,1
+Taiwan*,Recovered,433,1
+Taiwan*,Active,5,1
+Zimbabwe,Confirmed,391,1
+Zimbabwe,Deaths,4,1
+Zimbabwe,Recovered,62,1
+Zimbabwe,Active,325,1
+Mauritius,Confirmed,337,1
+Mauritius,Deaths,10,1
+Mauritius,Recovered,325,1
+Mauritius,Active,2,1
+Vietnam,Confirmed,334,1
+Vietnam,Deaths,0,1
+Vietnam,Recovered,325,1
+Vietnam,Active,9,1
+Montenegro,Confirmed,326,1
+Montenegro,Deaths,9,1
+Montenegro,Recovered,315,1
+Montenegro,Active,2,1
+Burma,Confirmed,262,1
+Burma,Deaths,6,1
+Burma,Recovered,179,1
+Burma,Active,77,1
+Suriname,Confirmed,236,1
+Suriname,Deaths,6,1
+Suriname,Recovered,48,1
+Suriname,Active,182,1
+Mongolia,Confirmed,197,1
+Mongolia,Deaths,0,1
+Mongolia,Recovered,111,1
+Mongolia,Active,86,1
+Comoros,Confirmed,197,1
+Comoros,Deaths,3,1
+Comoros,Recovered,127,1
+Comoros,Active,67,1
+Syria,Confirmed,177,1
+Syria,Deaths,6,1
+Syria,Recovered,0,1
+Syria,Active,171,1
+Guyana,Confirmed,171,1
+Guyana,Deaths,12,1
+Guyana,Recovered,99,1
+Guyana,Active,60,1
+Angola,Confirmed,148,1
+Angola,Deaths,6,1
+Angola,Recovered,64,1
+Angola,Active,78,1
+Brunei,Confirmed,141,1
+Brunei,Deaths,3,1
+Brunei,Recovered,138,1
+Brunei,Active,0,1
+Cambodia,Confirmed,128,1
+Cambodia,Deaths,0,1
+Cambodia,Recovered,126,1
+Cambodia,Active,2,1
+Trinidad and Tobago,Confirmed,123,1
+Trinidad and Tobago,Deaths,8,1
+Trinidad and Tobago,Recovered,109,1
+Trinidad and Tobago,Active,6,1
+Eritrea,Confirmed,121,1
+Eritrea,Deaths,0,1
+Eritrea,Recovered,39,1
+Eritrea,Active,82,1
+Bahamas,Confirmed,104,1
+Bahamas,Deaths,11,1
+Bahamas,Recovered,72,1
+Bahamas,Active,21,1
+Burundi,Confirmed,104,1
+Burundi,Deaths,1,1
+Burundi,Recovered,75,1
+Burundi,Active,28,1
+Monaco,Confirmed,99,1
+Monaco,Deaths,4,1
+Monaco,Recovered,94,1
+Monaco,Active,1,1
+Barbados,Confirmed,97,1
+Barbados,Deaths,7,1
+Barbados,Recovered,83,1
+Barbados,Active,7,1
+Liechtenstein,Confirmed,82,1
+Liechtenstein,Deaths,1,1
+Liechtenstein,Recovered,55,1
+Liechtenstein,Active,26,1
+Bhutan,Confirmed,67,1
+Bhutan,Deaths,0,1
+Bhutan,Recovered,24,1
+Bhutan,Active,43,1
+Botswana,Confirmed,60,1
+Botswana,Deaths,1,1
+Botswana,Recovered,24,1
+Botswana,Active,35,1
+Gambia,Confirmed,34,1
+Gambia,Deaths,1,1
+Gambia,Recovered,24,1
+Gambia,Active,9,1
+Namibia,Confirmed,34,1
+Namibia,Deaths,0,1
+Namibia,Recovered,18,1
+Namibia,Active,16,1
+Saint Vincent and the Grenadines,Confirmed,29,1
+Saint Vincent and the Grenadines,Deaths,0,1
+Saint Vincent and the Grenadines,Recovered,25,1
+Saint Vincent and the Grenadines,Active,4,1
+Antigua and Barbuda,Confirmed,26,1
+Antigua and Barbuda,Deaths,3,1
+Antigua and Barbuda,Recovered,22,1
+Antigua and Barbuda,Active,1,1
+Timor-Leste,Confirmed,24,1
+Timor-Leste,Deaths,0,1
+Timor-Leste,Recovered,0,1
+Timor-Leste,Active,24,1
+Grenada,Confirmed,23,1
+Grenada,Deaths,0,1
+Grenada,Recovered,22,1
+Grenada,Active,1,1
+Belize,Confirmed,22,1
+Belize,Deaths,2,1
+Belize,Recovered,16,1
+Belize,Active,4,1
+Saint Lucia,Confirmed,19,1
+Saint Lucia,Deaths,0,1
+Saint Lucia,Recovered,18,1
+Saint Lucia,Active,1,1
+Laos,Confirmed,19,1
+Laos,Deaths,0,1
+Laos,Recovered,19,1
+Laos,Active,0,1
+Fiji,Confirmed,18,1
+Fiji,Deaths,0,1
+Fiji,Recovered,18,1
+Fiji,Active,0,1
+Dominica,Confirmed,18,1
+Dominica,Deaths,0,1
+Dominica,Recovered,16,1
+Dominica,Active,2,1
+Saint Kitts and Nevis,Confirmed,15,1
+Saint Kitts and Nevis,Deaths,0,1
+Saint Kitts and Nevis,Recovered,15,1
+Saint Kitts and Nevis,Active,0,1
+Greenland,Confirmed,13,1
+Greenland,Deaths,0,1
+Greenland,Recovered,13,1
+Greenland,Active,0,1
+Holy See,Confirmed,12,1
+Holy See,Deaths,0,1
+Holy See,Recovered,12,1
+Holy See,Active,0,1
+Seychelles,Confirmed,11,1
+Seychelles,Deaths,0,1
+Seychelles,Recovered,11,1
+Seychelles,Active,0,1
+Western Sahara,Confirmed,9,1
+Western Sahara,Deaths,1,1
+Western Sahara,Recovered,8,1
+Western Sahara,Active,0,1
+Papua New Guinea,Confirmed,8,1
+Papua New Guinea,Deaths,0,1
+Papua New Guinea,Recovered,8,1
+Papua New Guinea,Active,0,1
+Lesotho,Confirmed,4,1
+Lesotho,Deaths,0,1
+Lesotho,Recovered,2,1
+Lesotho,Active,2,1
+US,Confirmed,2137731,49
+US,Deaths,116963,49
+US,Recovered,583503,49
+US,Active,1437265,49
+Brazil,Confirmed,923189,49
+Brazil,Deaths,45241,49
+Brazil,Recovered,490005,49
+Brazil,Active,387943,49
+Russia,Confirmed,544725,49
+Russia,Deaths,7274,49
+Russia,Recovered,293780,49
+Russia,Active,243671,49
+India,Confirmed,354065,49
+India,Deaths,11903,49
+India,Recovered,186935,49
+India,Active,155227,49
+United Kingdom,Confirmed,299600,49
+United Kingdom,Deaths,42054,49
+United Kingdom,Recovered,1293,49
+United Kingdom,Active,256253,49
+Spain,Confirmed,244328,49
+Spain,Deaths,27136,49
+Spain,Recovered,150376,49
+Spain,Active,66816,49
+Italy,Confirmed,237500,49
+Italy,Deaths,34405,49
+Italy,Recovered,178526,49
+Italy,Active,24569,49
+Peru,Confirmed,237156,49
+Peru,Deaths,7056,49
+Peru,Recovered,125205,49
+Peru,Active,104895,49
+France,Confirmed,194347,49
+France,Deaths,29550,49
+France,Recovered,73459,49
+France,Active,91338,49
+Iran,Confirmed,192439,49
+Iran,Deaths,9065,49
+Iran,Recovered,152675,49
+Iran,Active,30699,49
+Germany,Confirmed,188252,49
+Germany,Deaths,8820,49
+Germany,Recovered,172842,49
+Germany,Active,6590,49
+Chile,Confirmed,184449,49
+Chile,Deaths,3383,49
+Chile,Recovered,156232,49
+Chile,Active,24834,49
+Turkey,Confirmed,181298,49
+Turkey,Deaths,4842,49
+Turkey,Recovered,153379,49
+Turkey,Active,23077,49
+Mexico,Confirmed,154863,49
+Mexico,Deaths,18310,49
+Mexico,Recovered,115394,49
+Mexico,Active,21159,49
+Pakistan,Confirmed,154760,49
+Pakistan,Deaths,2975,49
+Pakistan,Recovered,58437,49
+Pakistan,Active,93348,49
+Saudi Arabia,Confirmed,136315,49
+Saudi Arabia,Deaths,1052,49
+Saudi Arabia,Recovered,89540,49
+Saudi Arabia,Active,45723,49
+Canada,Confirmed,101074,49
+Canada,Deaths,8270,49
+Canada,Recovered,0,49
+Canada,Active,92804,49
+Bangladesh,Confirmed,94481,49
+Bangladesh,Deaths,1262,49
+Bangladesh,Recovered,36264,49
+Bangladesh,Active,56955,49
+China,Confirmed,84422,49
+China,Deaths,4638,49
+China,Recovered,79493,49
+China,Active,291,49
+Qatar,Confirmed,82077,49
+Qatar,Deaths,80,49
+Qatar,Recovered,60461,49
+Qatar,Active,21536,49
+South Africa,Confirmed,76334,49
+South Africa,Deaths,1625,49
+South Africa,Recovered,42063,49
+South Africa,Active,32646,49
+Belgium,Confirmed,60155,49
+Belgium,Deaths,9663,49
+Belgium,Recovered,16625,49
+Belgium,Active,33867,49
+Belarus,Confirmed,55369,49
+Belarus,Deaths,318,49
+Belarus,Recovered,31273,49
+Belarus,Active,23778,49
+Sweden,Confirmed,53323,49
+Sweden,Deaths,4939,49
+Sweden,Recovered,0,49
+Sweden,Active,48384,49
+Colombia,Confirmed,53211,49
+Colombia,Deaths,1808,49
+Colombia,Recovered,19986,49
+Colombia,Active,31417,49
+Netherlands,Confirmed,49288,49
+Netherlands,Deaths,6089,49
+Netherlands,Recovered,179,49
+Netherlands,Active,43020,49
+Ecuador,Confirmed,47943,49
+Ecuador,Deaths,3970,49
+Ecuador,Recovered,23684,49
+Ecuador,Active,20289,49
+Egypt,Confirmed,47856,49
+Egypt,Deaths,1766,49
+Egypt,Recovered,12730,49
+Egypt,Active,33360,49
+United Arab Emirates,Confirmed,42982,49
+United Arab Emirates,Deaths,293,49
+United Arab Emirates,Recovered,28861,49
+United Arab Emirates,Active,13828,49
+Singapore,Confirmed,40969,49
+Singapore,Deaths,26,49
+Singapore,Recovered,31163,49
+Singapore,Active,9780,49
+Indonesia,Confirmed,40400,49
+Indonesia,Deaths,2231,49
+Indonesia,Recovered,15703,49
+Indonesia,Active,22466,49
+Portugal,Confirmed,37336,49
+Portugal,Deaths,1522,49
+Portugal,Recovered,23212,49
+Portugal,Active,12602,49
+Kuwait,Confirmed,36958,49
+Kuwait,Deaths,303,49
+Kuwait,Recovered,28206,49
+Kuwait,Active,8449,49
+Argentina,Confirmed,34159,49
+Argentina,Deaths,878,49
+Argentina,Recovered,10174,49
+Argentina,Active,23107,49
+Ukraine,Confirmed,33209,49
+Ukraine,Deaths,922,49
+Ukraine,Recovered,15054,49
+Ukraine,Active,17233,49
+Switzerland,Confirmed,31154,49
+Switzerland,Deaths,1954,49
+Switzerland,Recovered,28900,49
+Switzerland,Active,300,49
+Poland,Confirmed,30195,49
+Poland,Deaths,1272,49
+Poland,Recovered,14654,49
+Poland,Active,14269,49
+Philippines,Confirmed,26781,49
+Philippines,Deaths,1103,49
+Philippines,Recovered,6552,49
+Philippines,Active,19126,49
+Afghanistan,Confirmed,26310,49
+Afghanistan,Deaths,491,49
+Afghanistan,Recovered,5508,49
+Afghanistan,Active,20311,49
+Ireland,Confirmed,25334,49
+Ireland,Deaths,1709,49
+Ireland,Recovered,22698,49
+Ireland,Active,927,49
+Oman,Confirmed,25269,49
+Oman,Deaths,114,49
+Oman,Recovered,11089,49
+Oman,Active,14066,49
+Dominican Republic,Confirmed,23686,49
+Dominican Republic,Deaths,615,49
+Dominican Republic,Recovered,14133,49
+Dominican Republic,Active,8938,49
+Iraq,Confirmed,22700,49
+Iraq,Deaths,712,49
+Iraq,Recovered,9862,49
+Iraq,Active,12126,49
+Romania,Confirmed,22415,49
+Romania,Deaths,1437,49
+Romania,Recovered,16071,49
+Romania,Active,4907,49
+Panama,Confirmed,21962,49
+Panama,Deaths,457,49
+Panama,Recovered,13774,49
+Panama,Active,7731,49
+Bolivia,Confirmed,19883,49
+Bolivia,Deaths,659,49
+Bolivia,Recovered,3752,49
+Bolivia,Active,15472,49
+Bahrain,Confirmed,19553,49
+Bahrain,Deaths,47,49
+Bahrain,Recovered,13866,49
+Bahrain,Active,5640,49
+Israel,Confirmed,19495,49
+Israel,Deaths,302,49
+Israel,Recovered,15449,49
+Israel,Active,3744,49
+Armenia,Confirmed,17489,49
+Armenia,Deaths,293,49
+Armenia,Recovered,6571,49
+Armenia,Active,10625,49
+Japan,Confirmed,17484,49
+Japan,Deaths,934,49
+Japan,Recovered,15652,49
+Japan,Active,898,49
+Austria,Confirmed,17189,49
+Austria,Deaths,681,49
+Austria,Recovered,16089,49
+Austria,Active,419,49
+Nigeria,Confirmed,17148,49
+Nigeria,Deaths,455,49
+Nigeria,Recovered,5623,49
+Nigeria,Active,11070,49
+Kazakhstan,Confirmed,15542,49
+Kazakhstan,Deaths,88,49
+Kazakhstan,Recovered,9647,49
+Kazakhstan,Active,5807,49
+Denmark,Confirmed,12437,49
+Denmark,Deaths,598,49
+Denmark,Recovered,11312,49
+Denmark,Active,527,49
+Serbia,Confirmed,12426,49
+Serbia,Deaths,256,49
+Serbia,Recovered,11624,49
+Serbia,Active,546,49
+Moldova,Confirmed,12254,49
+Moldova,Deaths,423,49
+Moldova,Recovered,6901,49
+Moldova,Active,4930,49
+South Korea,Confirmed,12198,49
+South Korea,Deaths,279,49
+South Korea,Recovered,10774,49
+South Korea,Active,1145,49
+Ghana,Confirmed,12193,49
+Ghana,Deaths,58,49
+Ghana,Recovered,4326,49
+Ghana,Active,7809,49
+Algeria,Confirmed,11147,49
+Algeria,Deaths,788,49
+Algeria,Recovered,7842,49
+Algeria,Active,2517,49
+Guatemala,Confirmed,10706,49
+Guatemala,Deaths,418,49
+Guatemala,Recovered,2096,49
+Guatemala,Active,8192,49
+Azerbaijan,Confirmed,10662,49
+Azerbaijan,Deaths,126,49
+Azerbaijan,Recovered,5948,49
+Azerbaijan,Active,4588,49
+Czechia,Confirmed,10111,49
+Czechia,Deaths,331,49
+Czechia,Recovered,7358,49
+Czechia,Active,2422,49
+Cameroon,Confirmed,9864,49
+Cameroon,Deaths,276,49
+Cameroon,Recovered,5570,49
+Cameroon,Active,4018,49
+Honduras,Confirmed,9656,49
+Honduras,Deaths,330,49
+Honduras,Recovered,1075,49
+Honduras,Active,8251,49
+Morocco,Confirmed,8931,49
+Morocco,Deaths,212,49
+Morocco,Recovered,7937,49
+Morocco,Active,782,49
+Norway,Confirmed,8660,49
+Norway,Deaths,242,49
+Norway,Recovered,8138,49
+Norway,Active,280,49
+Malaysia,Confirmed,8505,49
+Malaysia,Deaths,121,49
+Malaysia,Recovered,7733,49
+Malaysia,Active,651,49
+Sudan,Confirmed,7740,49
+Sudan,Deaths,477,49
+Sudan,Recovered,2820,49
+Sudan,Active,4443,49
+Australia,Confirmed,7370,49
+Australia,Deaths,102,49
+Australia,Recovered,6861,49
+Australia,Active,407,49
+Finland,Confirmed,7112,49
+Finland,Deaths,326,49
+Finland,Recovered,6200,49
+Finland,Active,586,49
+Nepal,Confirmed,6591,49
+Nepal,Deaths,19,49
+Nepal,Recovered,1158,49
+Nepal,Active,5414,49
+Cote d'Ivoire,Confirmed,5679,49
+Cote d'Ivoire,Deaths,46,49
+Cote d'Ivoire,Recovered,2637,49
+Cote d'Ivoire,Active,2996,49
+Uzbekistan,Confirmed,5493,49
+Uzbekistan,Deaths,19,49
+Uzbekistan,Recovered,4096,49
+Uzbekistan,Active,1378,49
+Senegal,Confirmed,5247,49
+Senegal,Deaths,70,49
+Senegal,Recovered,3525,49
+Senegal,Active,1652,49
+Tajikistan,Confirmed,5160,49
+Tajikistan,Deaths,50,49
+Tajikistan,Recovered,3624,49
+Tajikistan,Active,1486,49
+Congo (Kinshasa),Confirmed,4974,49
+Congo (Kinshasa),Deaths,112,49
+Congo (Kinshasa),Recovered,628,49
+Congo (Kinshasa),Active,4234,49
+Guinea,Confirmed,4639,49
+Guinea,Deaths,26,49
+Guinea,Recovered,3327,49
+Guinea,Active,1286,49
+Haiti,Confirmed,4547,49
+Haiti,Deaths,80,49
+Haiti,Recovered,24,49
+Haiti,Active,4443,49
+Djibouti,Confirmed,4539,49
+Djibouti,Deaths,43,49
+Djibouti,Recovered,3324,49
+Djibouti,Active,1172,49
+North Macedonia,Confirmed,4299,49
+North Macedonia,Deaths,201,49
+North Macedonia,Recovered,1757,49
+North Macedonia,Active,2341,49
+Gabon,Confirmed,4114,49
+Gabon,Deaths,29,49
+Gabon,Recovered,1432,49
+Gabon,Active,2653,49
+Hungary,Confirmed,4077,49
+Hungary,Deaths,565,49
+Hungary,Recovered,2516,49
+Hungary,Active,996,49
+Luxembourg,Confirmed,4075,49
+Luxembourg,Deaths,110,49
+Luxembourg,Recovered,3933,49
+Luxembourg,Active,32,49
+El Salvador,Confirmed,3941,49
+El Salvador,Deaths,76,49
+El Salvador,Recovered,2041,49
+El Salvador,Active,1824,49
+Kenya,Confirmed,3860,49
+Kenya,Deaths,105,49
+Kenya,Recovered,1328,49
+Kenya,Active,2427,49
+Ethiopia,Confirmed,3630,49
+Ethiopia,Deaths,61,49
+Ethiopia,Recovered,738,49
+Ethiopia,Active,2831,49
+Bulgaria,Confirmed,3453,49
+Bulgaria,Deaths,181,49
+Bulgaria,Recovered,1817,49
+Bulgaria,Active,1455,49
+Venezuela,Confirmed,3150,49
+Venezuela,Deaths,27,49
+Venezuela,Recovered,835,49
+Venezuela,Active,2288,49
+Greece,Confirmed,3148,49
+Greece,Deaths,185,49
+Greece,Recovered,1374,49
+Greece,Active,1589,49
+Thailand,Confirmed,3135,49
+Thailand,Deaths,58,49
+Thailand,Recovered,2993,49
+Thailand,Active,84,49
+Bosnia and Herzegovina,Confirmed,3085,49
+Bosnia and Herzegovina,Deaths,168,49
+Bosnia and Herzegovina,Recovered,2178,49
+Bosnia and Herzegovina,Active,739,49
+Somalia,Confirmed,2658,49
+Somalia,Deaths,88,49
+Somalia,Recovered,649,49
+Somalia,Active,1921,49
+Kyrgyzstan,Confirmed,2562,49
+Kyrgyzstan,Deaths,30,49
+Kyrgyzstan,Recovered,1902,49
+Kyrgyzstan,Active,630,49
+Central African Republic,Confirmed,2410,49
+Central African Republic,Deaths,14,49
+Central African Republic,Recovered,396,49
+Central African Republic,Active,2000,49
+Cuba,Confirmed,2273,49
+Cuba,Deaths,84,49
+Cuba,Recovered,1994,49
+Cuba,Active,195,49
+Croatia,Confirmed,2255,49
+Croatia,Deaths,107,49
+Croatia,Recovered,2140,49
+Croatia,Active,8,49
+Maldives,Confirmed,2094,49
+Maldives,Deaths,8,49
+Maldives,Recovered,1670,49
+Maldives,Active,416,49
+Mauritania,Confirmed,2057,49
+Mauritania,Deaths,93,49
+Mauritania,Recovered,373,49
+Mauritania,Active,1591,49
+Estonia,Confirmed,1975,49
+Estonia,Deaths,69,49
+Estonia,Recovered,1728,49
+Estonia,Active,178,49
+Sri Lanka,Confirmed,1915,49
+Sri Lanka,Deaths,11,49
+Sri Lanka,Recovered,1371,49
+Sri Lanka,Active,533,49
+Mali,Confirmed,1885,49
+Mali,Deaths,104,49
+Mali,Recovered,1145,49
+Mali,Active,636,49
+Nicaragua,Confirmed,1823,49
+Nicaragua,Deaths,64,49
+Nicaragua,Recovered,1238,49
+Nicaragua,Active,521,49
+Iceland,Confirmed,1812,49
+Iceland,Deaths,10,49
+Iceland,Recovered,1796,49
+Iceland,Active,6,49
+Costa Rica,Confirmed,1796,49
+Costa Rica,Deaths,12,49
+Costa Rica,Recovered,794,49
+Costa Rica,Active,990,49
+Lithuania,Confirmed,1776,49
+Lithuania,Deaths,76,49
+Lithuania,Recovered,1441,49
+Lithuania,Active,259,49
+South Sudan,Confirmed,1776,49
+South Sudan,Deaths,30,49
+South Sudan,Recovered,58,49
+South Sudan,Active,1688,49
+Albania,Confirmed,1672,49
+Albania,Deaths,37,49
+Albania,Recovered,1064,49
+Albania,Active,571,49
+Equatorial Guinea,Confirmed,1664,49
+Equatorial Guinea,Deaths,32,49
+Equatorial Guinea,Recovered,515,49
+Equatorial Guinea,Active,1117,49
+Slovakia,Confirmed,1552,49
+Slovakia,Deaths,28,49
+Slovakia,Recovered,1426,49
+Slovakia,Active,98,49
+New Zealand,Confirmed,1506,49
+New Zealand,Deaths,22,49
+New Zealand,Recovered,1482,49
+New Zealand,Active,2,49
+Slovenia,Confirmed,1499,49
+Slovenia,Deaths,109,49
+Slovenia,Recovered,1359,49
+Slovenia,Active,31,49
+Guinea-Bissau,Confirmed,1492,49
+Guinea-Bissau,Deaths,15,49
+Guinea-Bissau,Recovered,153,49
+Guinea-Bissau,Active,1324,49
+Kosovo,Confirmed,1486,49
+Kosovo,Deaths,33,49
+Kosovo,Recovered,953,49
+Kosovo,Active,500,49
+Lebanon,Confirmed,1473,49
+Lebanon,Deaths,32,49
+Lebanon,Recovered,889,49
+Lebanon,Active,552,49
+Zambia,Confirmed,1405,49
+Zambia,Deaths,11,49
+Zambia,Recovered,1142,49
+Zambia,Active,252,49
+Madagascar,Confirmed,1317,49
+Madagascar,Deaths,12,49
+Madagascar,Recovered,417,49
+Madagascar,Active,888,49
+Paraguay,Confirmed,1303,49
+Paraguay,Deaths,13,49
+Paraguay,Recovered,699,49
+Paraguay,Active,591,49
+Sierra Leone,Confirmed,1225,49
+Sierra Leone,Deaths,51,49
+Sierra Leone,Recovered,686,49
+Sierra Leone,Active,488,49
+Tunisia,Confirmed,1125,49
+Tunisia,Deaths,49,49
+Tunisia,Recovered,1002,49
+Tunisia,Active,74,49
+Latvia,Confirmed,1098,49
+Latvia,Deaths,28,49
+Latvia,Recovered,875,49
+Latvia,Active,195,49
+Niger,Confirmed,1016,49
+Niger,Deaths,66,49
+Niger,Recovered,885,49
+Niger,Active,65,49
+Cyprus,Confirmed,985,49
+Cyprus,Deaths,18,49
+Cyprus,Recovered,816,49
+Cyprus,Active,151,49
+Jordan,Confirmed,981,49
+Jordan,Deaths,9,49
+Jordan,Recovered,693,49
+Jordan,Active,279,49
+Burkina Faso,Confirmed,895,49
+Burkina Faso,Deaths,53,49
+Burkina Faso,Recovered,807,49
+Burkina Faso,Active,35,49
+Yemen,Confirmed,885,49
+Yemen,Deaths,214,49
+Yemen,Recovered,91,49
+Yemen,Active,580,49
+Congo (Brazzaville),Confirmed,883,49
+Congo (Brazzaville),Deaths,27,49
+Congo (Brazzaville),Recovered,391,49
+Congo (Brazzaville),Active,465,49
+Georgia,Confirmed,879,49
+Georgia,Deaths,14,49
+Georgia,Recovered,724,49
+Georgia,Active,141,49
+Andorra,Confirmed,854,49
+Andorra,Deaths,52,49
+Andorra,Recovered,789,49
+Andorra,Active,13,49
+Chad,Confirmed,853,49
+Chad,Deaths,74,49
+Chad,Recovered,720,49
+Chad,Active,59,49
+Uruguay,Confirmed,849,49
+Uruguay,Deaths,24,49
+Uruguay,Recovered,801,49
+Uruguay,Active,24,49
+Cabo Verde,Confirmed,781,49
+Cabo Verde,Deaths,7,49
+Cabo Verde,Recovered,354,49
+Cabo Verde,Active,420,49
+Uganda,Confirmed,724,49
+Uganda,Deaths,0,49
+Uganda,Recovered,351,49
+Uganda,Active,373,49
+San Marino,Confirmed,694,49
+San Marino,Deaths,42,49
+San Marino,Recovered,590,49
+San Marino,Active,62,49
+Sao Tome and Principe,Confirmed,671,49
+Sao Tome and Principe,Deaths,12,49
+Sao Tome and Principe,Recovered,182,49
+Sao Tome and Principe,Active,477,49
+Malta,Confirmed,656,49
+Malta,Deaths,9,49
+Malta,Recovered,608,49
+Malta,Active,39,49
+Mozambique,Confirmed,638,49
+Mozambique,Deaths,4,49
+Mozambique,Recovered,0,49
+Mozambique,Active,634,49
+Rwanda,Confirmed,636,49
+Rwanda,Deaths,2,49
+Rwanda,Recovered,338,49
+Rwanda,Active,296,49
+Jamaica,Confirmed,621,49
+Jamaica,Deaths,10,49
+Jamaica,Recovered,449,49
+Jamaica,Active,162,49
+Malawi,Confirmed,564,49
+Malawi,Deaths,6,49
+Malawi,Recovered,73,49
+Malawi,Active,485,49
+Togo,Confirmed,537,49
+Togo,Deaths,13,49
+Togo,Recovered,344,49
+Togo,Active,180,49
+Benin,Confirmed,532,49
+Benin,Deaths,9,49
+Benin,Recovered,236,49
+Benin,Active,287,49
+Eswatini,Confirmed,520,49
+Eswatini,Deaths,4,49
+Eswatini,Recovered,259,49
+Eswatini,Active,257,49
+West Bank and Gaza,Confirmed,514,49
+West Bank and Gaza,Deaths,3,49
+West Bank and Gaza,Recovered,415,49
+West Bank and Gaza,Active,96,49
+Liberia,Confirmed,509,49
+Liberia,Deaths,33,49
+Liberia,Recovered,222,49
+Liberia,Active,254,49
+Tanzania,Confirmed,509,49
+Tanzania,Deaths,21,49
+Tanzania,Recovered,183,49
+Tanzania,Active,305,49
+Libya,Confirmed,484,49
+Libya,Deaths,10,49
+Libya,Recovered,76,49
+Libya,Active,398,49
+Taiwan*,Confirmed,445,49
+Taiwan*,Deaths,7,49
+Taiwan*,Recovered,433,49
+Taiwan*,Active,5,49
+Zimbabwe,Confirmed,391,49
+Zimbabwe,Deaths,4,49
+Zimbabwe,Recovered,62,49
+Zimbabwe,Active,325,49
+Mauritius,Confirmed,337,49
+Mauritius,Deaths,10,49
+Mauritius,Recovered,325,49
+Mauritius,Active,2,49
+Vietnam,Confirmed,334,49
+Vietnam,Deaths,0,49
+Vietnam,Recovered,325,49
+Vietnam,Active,9,49
+Montenegro,Confirmed,326,49
+Montenegro,Deaths,9,49
+Montenegro,Recovered,315,49
+Montenegro,Active,2,49
+Burma,Confirmed,262,49
+Burma,Deaths,6,49
+Burma,Recovered,179,49
+Burma,Active,77,49
+Suriname,Confirmed,236,49
+Suriname,Deaths,6,49
+Suriname,Recovered,48,49
+Suriname,Active,182,49
+Mongolia,Confirmed,197,49
+Mongolia,Deaths,0,49
+Mongolia,Recovered,111,49
+Mongolia,Active,86,49
+Comoros,Confirmed,197,49
+Comoros,Deaths,3,49
+Comoros,Recovered,127,49
+Comoros,Active,67,49
+Syria,Confirmed,177,49
+Syria,Deaths,6,49
+Syria,Recovered,0,49
+Syria,Active,171,49
+Guyana,Confirmed,171,49
+Guyana,Deaths,12,49
+Guyana,Recovered,99,49
+Guyana,Active,60,49
+Angola,Confirmed,148,49
+Angola,Deaths,6,49
+Angola,Recovered,64,49
+Angola,Active,78,49
+Brunei,Confirmed,141,49
+Brunei,Deaths,3,49
+Brunei,Recovered,138,49
+Brunei,Active,0,49
+Cambodia,Confirmed,128,49
+Cambodia,Deaths,0,49
+Cambodia,Recovered,126,49
+Cambodia,Active,2,49
+Trinidad and Tobago,Confirmed,123,49
+Trinidad and Tobago,Deaths,8,49
+Trinidad and Tobago,Recovered,109,49
+Trinidad and Tobago,Active,6,49
+Eritrea,Confirmed,121,49
+Eritrea,Deaths,0,49
+Eritrea,Recovered,39,49
+Eritrea,Active,82,49
+Bahamas,Confirmed,104,49
+Bahamas,Deaths,11,49
+Bahamas,Recovered,72,49
+Bahamas,Active,21,49
+Burundi,Confirmed,104,49
+Burundi,Deaths,1,49
+Burundi,Recovered,75,49
+Burundi,Active,28,49
+Monaco,Confirmed,99,49
+Monaco,Deaths,4,49
+Monaco,Recovered,94,49
+Monaco,Active,1,49
+Barbados,Confirmed,97,49
+Barbados,Deaths,7,49
+Barbados,Recovered,83,49
+Barbados,Active,7,49
+Liechtenstein,Confirmed,82,49
+Liechtenstein,Deaths,1,49
+Liechtenstein,Recovered,55,49
+Liechtenstein,Active,26,49
+Bhutan,Confirmed,67,49
+Bhutan,Deaths,0,49
+Bhutan,Recovered,24,49
+Bhutan,Active,43,49
+Botswana,Confirmed,60,49
+Botswana,Deaths,1,49
+Botswana,Recovered,24,49
+Botswana,Active,35,49
+Gambia,Confirmed,34,49
+Gambia,Deaths,1,49
+Gambia,Recovered,24,49
+Gambia,Active,9,49
+Namibia,Confirmed,34,49
+Namibia,Deaths,0,49
+Namibia,Recovered,18,49
+Namibia,Active,16,49
+Saint Vincent and the Grenadines,Confirmed,29,49
+Saint Vincent and the Grenadines,Deaths,0,49
+Saint Vincent and the Grenadines,Recovered,25,49
+Saint Vincent and the Grenadines,Active,4,49
+Antigua and Barbuda,Confirmed,26,49
+Antigua and Barbuda,Deaths,3,49
+Antigua and Barbuda,Recovered,22,49
+Antigua and Barbuda,Active,1,49
+Timor-Leste,Confirmed,24,49
+Timor-Leste,Deaths,0,49
+Timor-Leste,Recovered,0,49
+Timor-Leste,Active,24,49
+Grenada,Confirmed,23,49
+Grenada,Deaths,0,49
+Grenada,Recovered,22,49
+Grenada,Active,1,49
+Belize,Confirmed,22,49
+Belize,Deaths,2,49
+Belize,Recovered,16,49
+Belize,Active,4,49
+Saint Lucia,Confirmed,19,49
+Saint Lucia,Deaths,0,49
+Saint Lucia,Recovered,18,49
+Saint Lucia,Active,1,49
+Laos,Confirmed,19,49
+Laos,Deaths,0,49
+Laos,Recovered,19,49
+Laos,Active,0,49
+Fiji,Confirmed,18,49
+Fiji,Deaths,0,49
+Fiji,Recovered,18,49
+Fiji,Active,0,49
+Dominica,Confirmed,18,49
+Dominica,Deaths,0,49
+Dominica,Recovered,16,49
+Dominica,Active,2,49
+Saint Kitts and Nevis,Confirmed,15,49
+Saint Kitts and Nevis,Deaths,0,49
+Saint Kitts and Nevis,Recovered,15,49
+Saint Kitts and Nevis,Active,0,49
+Greenland,Confirmed,13,49
+Greenland,Deaths,0,49
+Greenland,Recovered,13,49
+Greenland,Active,0,49
+Holy See,Confirmed,12,49
+Holy See,Deaths,0,49
+Holy See,Recovered,12,49
+Holy See,Active,0,49
+Seychelles,Confirmed,11,49
+Seychelles,Deaths,0,49
+Seychelles,Recovered,11,49
+Seychelles,Active,0,49
+Western Sahara,Confirmed,9,49
+Western Sahara,Deaths,1,49
+Western Sahara,Recovered,8,49
+Western Sahara,Active,0,49
+Papua New Guinea,Confirmed,8,49
+Papua New Guinea,Deaths,0,49
+Papua New Guinea,Recovered,8,49
+Papua New Guinea,Active,0,49
+Lesotho,Confirmed,4,49
+Lesotho,Deaths,0,49
+Lesotho,Recovered,2,49
+Lesotho,Active,2,49

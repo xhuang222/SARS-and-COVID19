@@ -1,9 +1,8 @@
 window.onload=function() {
     var containerDiv = document.getElementById("vizContainer"),
-        url = "https://public.tableau.com/views/SARSOverview/SARS_1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
+        url = "https://public.tableau.com/views/Country_15934074191600/COVID19_1?:language=en&:retry=yes&:display_count=y&:origin=viz_share_link",
         options = {
-            hideTabs: true,
-            hideToolbar: true,
+        
             onFirstInteractive: function () {
                 console.log("Run this code when the viz has finished loading.");
             }

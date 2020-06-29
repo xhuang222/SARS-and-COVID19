@@ -1,0 +1,3488 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0525.1210                               -->
+<workbook original-version='18.1' source-build='2020.2.1 (20202.20.0525.1210)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cov19_country_count' inline='true' name='federated.00wkklw1tfbk4w16c9h1s12blyis' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cov19_country_count' name='textscan.1mzol1r0ax75zq12spgn10cv7elp'>
+            <connection class='textscan' directory='/Users/lancy/Desktop/data' filename='cov19_country_count.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1mzol1r0ax75zq12spgn10cv7elp' name='cov19_country_count.csv' table='[cov19_country_count#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Confirmed' ordinal='1' />
+            <column datatype='integer' name='Deaths' ordinal='2' />
+            <column datatype='integer' name='Recovered' ordinal='3' />
+            <column datatype='integer' name='Active' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1mzol1r0ax75zq12spgn10cv7elp' name='cov19_country_count.csv' table='[cov19_country_count#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Country' ordinal='0' />
+              <column datatype='integer' name='Confirmed' ordinal='1' />
+              <column datatype='integer' name='Deaths' ordinal='2' />
+              <column datatype='integer' name='Recovered' ordinal='3' />
+              <column datatype='integer' name='Active' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1mzol1r0ax75zq12spgn10cv7elp' name='sars_country_count.csv' table='[sars_country_count#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Country' ordinal='0' />
+              <column datatype='integer' name='Confirmed' ordinal='1' />
+              <column datatype='integer' name='Deaths' ordinal='2' />
+              <column datatype='integer' name='Recovered' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Active]' value='[cov19_country_count.csv].[Active]' />
+          <map key='[Confirmed (sars_country_count.csv)]' value='[sars_country_count.csv].[Confirmed]' />
+          <map key='[Confirmed]' value='[cov19_country_count.csv].[Confirmed]' />
+          <map key='[Country (sars_country_count.csv)]' value='[sars_country_count.csv].[Country]' />
+          <map key='[Country]' value='[cov19_country_count.csv].[Country]' />
+          <map key='[Deaths (sars_country_count.csv)]' value='[sars_country_count.csv].[Deaths]' />
+          <map key='[Deaths]' value='[cov19_country_count.csv].[Deaths]' />
+          <map key='[Recovered (sars_country_count.csv)]' value='[sars_country_count.csv].[Recovered]' />
+          <map key='[Recovered]' value='[cov19_country_count.csv].[Recovered]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Confirmed</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recovered]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Recovered</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Active]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Active</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country (sars_country_count.csv)]</local-name>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed (sars_country_count.csv)]</local-name>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias>Confirmed</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths (sars_country_count.csv)]</local-name>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recovered (sars_country_count.csv)]</local-name>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias>Recovered</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Mortality rate' datatype='real' name='[Calculation_4102427483369193472]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Deaths]/[Confirmed]' />
+      </column>
+      <column caption='Confirmed (sars country count.csv)' datatype='integer' name='[Confirmed (sars_country_count.csv)]' role='measure' type='quantitative' />
+      <column caption='Country (sars country count.csv)' datatype='string' name='[Country (sars_country_count.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Deaths (sars country count.csv)' datatype='integer' name='[Deaths (sars_country_count.csv)]' role='measure' type='quantitative' />
+      <column caption='Recovered (sars country count.csv)' datatype='integer' name='[Recovered (sars_country_count.csv)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='cov19_country_count.csv' datatype='table' name='[__tableau_internal_object_id__].[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='sars_country_count.csv' datatype='table' name='[__tableau_internal_object_id__].[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/lancy/Documents/My Tableau Repository/Datasources/cov19_country_count.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/29/2020 02:58:15 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844' table='[Extract].[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844' table='[Extract].[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]' type='table' />
+            <relation name='sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE' table='[Extract].[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Active]' value='[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844].[Active]' />
+            <map key='[Confirmed (sars_country_count.csv)]' value='[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE].[Confirmed]' />
+            <map key='[Confirmed]' value='[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844].[Confirmed]' />
+            <map key='[Country (sars_country_count.csv)]' value='[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE].[Country]' />
+            <map key='[Country]' value='[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844].[Country]' />
+            <map key='[Deaths (sars_country_count.csv)]' value='[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE].[Deaths]' />
+            <map key='[Deaths]' value='[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844].[Deaths]' />
+            <map key='[Recovered (sars_country_count.csv)]' value='[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE].[Recovered]' />
+            <map key='[Recovered]' value='[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844].[Recovered]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='cov19_country_count' increment-value='%null%' refresh-type='create' rows-inserted='218' timestamp-start='2020-06-29 02:58:15.160' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>187</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed]</local-name>
+              <parent-name>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</parent-name>
+              <remote-alias>Confirmed</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths]</local-name>
+              <parent-name>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>125</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recovered]</local-name>
+              <parent-name>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</parent-name>
+              <remote-alias>Recovered</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Active</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Active]</local-name>
+              <parent-name>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</parent-name>
+              <remote-alias>Active</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>164</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (sars_country_count.csv)]</local-name>
+              <parent-name>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>5</ordinal>
+              <family>sars_country_count.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed (sars_country_count.csv)]</local-name>
+              <parent-name>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</parent-name>
+              <remote-alias>Confirmed</remote-alias>
+              <ordinal>6</ordinal>
+              <family>sars_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths (sars_country_count.csv)]</local-name>
+              <parent-name>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>7</ordinal>
+              <family>sars_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recovered (sars_country_count.csv)]</local-name>
+              <parent-name>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</parent-name>
+              <remote-alias>Recovered</remote-alias>
+              <ordinal>8</ordinal>
+              <family>sars_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cov19_country_count.csv' id='cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844'>
+            <properties context=''>
+              <relation connection='textscan.1mzol1r0ax75zq12spgn10cv7elp' name='cov19_country_count.csv' table='[cov19_country_count#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Confirmed' ordinal='1' />
+                  <column datatype='integer' name='Deaths' ordinal='2' />
+                  <column datatype='integer' name='Recovered' ordinal='3' />
+                  <column datatype='integer' name='Active' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844' table='[Extract].[cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844]' type='table' />
+            </properties>
+          </object>
+          <object caption='sars_country_count.csv' id='sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE'>
+            <properties context=''>
+              <relation connection='textscan.1mzol1r0ax75zq12spgn10cv7elp' name='sars_country_count.csv' table='[sars_country_count#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Confirmed' ordinal='1' />
+                  <column datatype='integer' name='Deaths' ordinal='2' />
+                  <column datatype='integer' name='Recovered' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE' table='[Extract].[sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Confirmed]' />
+              <expression op='[Confirmed (sars_country_count.csv)]' />
+            </expression>
+            <first-end-point object-id='cov19_country_count.csv_7E65DA9B31DA4F3DA332488F7F4A4844' />
+            <second-end-point object-id='sars_country_count.csv_EE0CD6920EC64F8A90872E8DBE5565BE' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='sars_country_count' inline='true' name='federated.1ukkj5517ipw851d8k09o05hcg93' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sars_country_count' name='textscan.1d83qr90l6fie91b3m0zk1p5pwbu'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='/Users/lancy/Desktop/data/sars_country_count.csv' dataRefreshTime='' directory='/Users/lancy/Desktop/data' filename='/var/folders/ms/kv6gv_rx7q172d9v9r5v21v40000gn/T/tableau-temp/0ybp6961ueqzam1cytw4r1h1axox/sars_country_count.csv.xlsx' interpretationMode='8' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1d83qr90l6fie91b3m0zk1p5pwbu' name='cov19_country_count.csv' table='[/Users/lancy/Desktop/data/cov19_country_count#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:E189:no:A1:E189:2' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Confirmed' ordinal='1' />
+            <column datatype='integer' name='Deaths' ordinal='2' />
+            <column datatype='integer' name='Recovered' ordinal='3' />
+            <column datatype='integer' name='Active' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1d83qr90l6fie91b3m0zk1p5pwbu' name='sars_country_count.csv' table='[/Users/lancy/Desktop/data/sars_country_count#csv]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:D32:no:A1:D32:1' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Country' ordinal='0' />
+              <column datatype='integer' name='Confirmed' ordinal='1' />
+              <column datatype='integer' name='Deaths' ordinal='2' />
+              <column datatype='integer' name='Recovered' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1d83qr90l6fie91b3m0zk1p5pwbu' name='cov19_country_count.csv' table='[/Users/lancy/Desktop/data/cov19_country_count#csv]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:E189:no:A1:E189:2' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Country' ordinal='0' />
+              <column datatype='integer' name='Confirmed' ordinal='1' />
+              <column datatype='integer' name='Deaths' ordinal='2' />
+              <column datatype='integer' name='Recovered' ordinal='3' />
+              <column datatype='integer' name='Active' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1d83qr90l6fie91b3m0zk1p5pwbu' name='cov19_date_country_count.csv' table='[cov19_date_country_count#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='integer' name='Confirmed' ordinal='2' />
+              <column datatype='integer' name='Deaths' ordinal='3' />
+              <column datatype='integer' name='Recovered' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1d83qr90l6fie91b3m0zk1p5pwbu' name='sars_date_country_count.csv' table='[/Users/lancy/Desktop/data/sars_date_country_count#csv]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:E2539:no:A1:E2539:2' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='integer' name='Confirmed' ordinal='2' />
+              <column datatype='integer' name='Deaths' ordinal='3' />
+              <column datatype='integer' name='Recovered' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Active]' value='[cov19_country_count.csv].[Active]' />
+          <map key='[Confirmed (cov19_country_count.csv)]' value='[cov19_country_count.csv].[Confirmed]' />
+          <map key='[Confirmed (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv].[Confirmed]' />
+          <map key='[Confirmed (sars_date_country_count.csv)]' value='[sars_date_country_count.csv].[Confirmed]' />
+          <map key='[Confirmed]' value='[sars_country_count.csv].[Confirmed]' />
+          <map key='[Country (cov19_country_count.csv)]' value='[cov19_country_count.csv].[Country]' />
+          <map key='[Country (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv].[Country]' />
+          <map key='[Country (sars_date_country_count.csv)]' value='[sars_date_country_count.csv].[Country]' />
+          <map key='[Country]' value='[sars_country_count.csv].[Country]' />
+          <map key='[Date (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv].[Date]' />
+          <map key='[Date]' value='[sars_date_country_count.csv].[Date]' />
+          <map key='[Deaths (cov19_country_count.csv)]' value='[cov19_country_count.csv].[Deaths]' />
+          <map key='[Deaths (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv].[Deaths]' />
+          <map key='[Deaths (sars_date_country_count.csv)]' value='[sars_date_country_count.csv].[Deaths]' />
+          <map key='[Deaths]' value='[sars_country_count.csv].[Deaths]' />
+          <map key='[Recovered (cov19_country_count.csv)]' value='[cov19_country_count.csv].[Recovered]' />
+          <map key='[Recovered (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv].[Recovered]' />
+          <map key='[Recovered (sars_date_country_count.csv)]' value='[sars_date_country_count.csv].[Recovered]' />
+          <map key='[Recovered]' value='[sars_country_count.csv].[Recovered]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D32:no:A1:D32:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E189:no:A1:E189:2&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cov19_date_country_count.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sars_date_country_count.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E2539:no:A1:E2539:2&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed]</local-name>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias>Confirmed</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recovered]</local-name>
+            <parent-name>[sars_country_count.csv]</parent-name>
+            <remote-alias>Recovered</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country (cov19_country_count.csv)]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed (cov19_country_count.csv)]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Confirmed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths (cov19_country_count.csv)]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recovered (cov19_country_count.csv)]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Recovered</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Active]</local-name>
+            <parent-name>[cov19_country_count.csv]</parent-name>
+            <remote-alias>Active</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date (cov19_date_country_count.csv)]</local-name>
+            <parent-name>[cov19_date_country_count.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country (cov19_date_country_count.csv)]</local-name>
+            <parent-name>[cov19_date_country_count.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed (cov19_date_country_count.csv)]</local-name>
+            <parent-name>[cov19_date_country_count.csv]</parent-name>
+            <remote-alias>Confirmed</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths (cov19_date_country_count.csv)]</local-name>
+            <parent-name>[cov19_date_country_count.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recovered (cov19_date_country_count.csv)]</local-name>
+            <parent-name>[cov19_date_country_count.csv]</parent-name>
+            <remote-alias>Recovered</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[sars_date_country_count.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country (sars_date_country_count.csv)]</local-name>
+            <parent-name>[sars_date_country_count.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed (sars_date_country_count.csv)]</local-name>
+            <parent-name>[sars_date_country_count.csv]</parent-name>
+            <remote-alias>Confirmed</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths (sars_date_country_count.csv)]</local-name>
+            <parent-name>[sars_date_country_count.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recovered (sars_date_country_count.csv)]</local-name>
+            <parent-name>[sars_date_country_count.csv]</parent-name>
+            <remote-alias>Recovered</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Death Rate' datatype='real' name='[Calculation_3520055756230832128]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Deaths]/[Confirmed]' />
+      </column>
+      <column caption='Recovered Rate' datatype='real' name='[Calculation_3520055756232335363]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Recovered]/[Confirmed]' />
+      </column>
+      <column caption='covid19_death_rate' datatype='real' name='[Calculation_3520055756235100164]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Deaths (cov19_country_count.csv)]/[Confirmed (cov19_country_count.csv)]' />
+      </column>
+      <column caption='covid19_recovered_rate' datatype='real' name='[Calculation_3520055756235309061]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Recovered (cov19_country_count.csv)]/[Confirmed (cov19_country_count.csv)]' />
+      </column>
+      <column caption='mortality rate' datatype='real' name='[Calculation_3520055756243853321]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Deaths (sars_date_country_count.csv)]/[Confirmed (sars_date_country_count.csv)]' />
+      </column>
+      <column caption='Confirmed (cov19 date country count.csv)' datatype='integer' name='[Confirmed (cov19_date_country_count.csv)]' role='measure' type='quantitative' />
+      <column caption='Confirmed (sars date country count.csv)' datatype='integer' name='[Confirmed (sars_date_country_count.csv)]' role='measure' type='quantitative' />
+      <column caption='Country (cov19 country count.csv)' datatype='string' name='[Country (cov19_country_count.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country (cov19 date country count.csv)' datatype='string' name='[Country (cov19_date_country_count.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country (sars_date_country_count.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date (cov19 date country count.csv)' datatype='date' name='[Date (cov19_date_country_count.csv)]' role='dimension' type='ordinal' />
+      <column caption='Deaths (cov19 date country count.csv)' datatype='integer' name='[Deaths (cov19_date_country_count.csv)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Deaths (sars_date_country_count.csv)]' role='measure' type='quantitative' />
+      <column caption='Recovered (cov19 date country count.csv)' datatype='integer' name='[Recovered (cov19_date_country_count.csv)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Recovered (sars_date_country_count.csv)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='cov19_country_count.csv' datatype='table' name='[__tableau_internal_object_id__].[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='cov19_date_country_count.csv' datatype='table' name='[__tableau_internal_object_id__].[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='sars_country_count.csv' datatype='table' name='[__tableau_internal_object_id__].[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='sars_date_country_count.csv' datatype='table' name='[__tableau_internal_object_id__].[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]' role='measure' type='quantitative' />
+      <column-instance column='[Country (cov19_country_count.csv)]' derivation='None' name='[none:Country (cov19_country_count.csv):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Country (cov19_date_country_count.csv)]' derivation='None' name='[none:Country (cov19_date_country_count.csv):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Confirmed (sars_date_country_count.csv)]' derivation='Sum' name='[sum:Confirmed (sars_date_country_count.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Deaths (sars_date_country_count.csv)]' derivation='Sum' name='[sum:Deaths (sars_date_country_count.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Recovered (sars_date_country_count.csv)]' derivation='Sum' name='[sum:Recovered (sars_date_country_count.csv):qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/lancy/Documents/My Tableau Repository/Datasources/sars_country_count.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/27/2020 08:40:15 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706' table='[Extract].[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116' table='[Extract].[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]' type='table' />
+            <relation name='cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706' table='[Extract].[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]' type='table' />
+            <relation name='cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B' table='[Extract].[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]' type='table' />
+            <relation name='sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63' table='[Extract].[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Active]' value='[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706].[Active]' />
+            <map key='[Confirmed (cov19_country_count.csv)]' value='[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706].[Confirmed]' />
+            <map key='[Confirmed (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B].[Confirmed]' />
+            <map key='[Confirmed (sars_date_country_count.csv)]' value='[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63].[Confirmed]' />
+            <map key='[Confirmed]' value='[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116].[Confirmed]' />
+            <map key='[Country (cov19_country_count.csv)]' value='[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706].[Country]' />
+            <map key='[Country (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B].[Country]' />
+            <map key='[Country (sars_date_country_count.csv)]' value='[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63].[Country]' />
+            <map key='[Country]' value='[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116].[Country]' />
+            <map key='[Date (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B].[Date]' />
+            <map key='[Date]' value='[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63].[Date]' />
+            <map key='[Deaths (cov19_country_count.csv)]' value='[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706].[Deaths]' />
+            <map key='[Deaths (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B].[Deaths]' />
+            <map key='[Deaths (sars_date_country_count.csv)]' value='[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63].[Deaths]' />
+            <map key='[Deaths]' value='[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116].[Deaths]' />
+            <map key='[Recovered (cov19_country_count.csv)]' value='[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706].[Recovered]' />
+            <map key='[Recovered (cov19_date_country_count.csv)]' value='[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B].[Recovered]' />
+            <map key='[Recovered (sars_date_country_count.csv)]' value='[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63].[Recovered]' />
+            <map key='[Recovered]' value='[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116].[Recovered]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='sars_country_count' increment-value='%null%' refresh-type='create' rows-inserted='30244' timestamp-start='2020-06-27 20:40:15.786' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>sars_country_count.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed]</local-name>
+              <parent-name>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</parent-name>
+              <remote-alias>Confirmed</remote-alias>
+              <ordinal>1</ordinal>
+              <family>sars_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths]</local-name>
+              <parent-name>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>2</ordinal>
+              <family>sars_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recovered]</local-name>
+              <parent-name>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</parent-name>
+              <remote-alias>Recovered</remote-alias>
+              <ordinal>3</ordinal>
+              <family>sars_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (cov19_country_count.csv)]</local-name>
+              <parent-name>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>187</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed (cov19_country_count.csv)]</local-name>
+              <parent-name>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</parent-name>
+              <remote-alias>Confirmed</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths (cov19_country_count.csv)]</local-name>
+              <parent-name>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>125</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recovered (cov19_country_count.csv)]</local-name>
+              <parent-name>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</parent-name>
+              <remote-alias>Recovered</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Active</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Active]</local-name>
+              <parent-name>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</parent-name>
+              <remote-alias>Active</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cov19_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>164</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date (cov19_date_country_count.csv)]</local-name>
+              <parent-name>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cov19_date_country_count.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>147</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (cov19_date_country_count.csv)]</local-name>
+              <parent-name>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cov19_date_country_count.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>196</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed (cov19_date_country_count.csv)]</local-name>
+              <parent-name>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</parent-name>
+              <remote-alias>Confirmed</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cov19_date_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3604</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths (cov19_date_country_count.csv)]</local-name>
+              <parent-name>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cov19_date_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1072</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recovered (cov19_date_country_count.csv)]</local-name>
+              <parent-name>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</parent-name>
+              <remote-alias>Recovered</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cov19_date_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2123</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>14</ordinal>
+              <family>sars_date_country_count.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (sars_date_country_count.csv)]</local-name>
+              <parent-name>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>15</ordinal>
+              <family>sars_date_country_count.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed (sars_date_country_count.csv)]</local-name>
+              <parent-name>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</parent-name>
+              <remote-alias>Confirmed</remote-alias>
+              <ordinal>16</ordinal>
+              <family>sars_date_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>220</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths (sars_date_country_count.csv)]</local-name>
+              <parent-name>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>17</ordinal>
+              <family>sars_date_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recovered (sars_date_country_count.csv)]</local-name>
+              <parent-name>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</parent-name>
+              <remote-alias>Recovered</remote-alias>
+              <ordinal>18</ordinal>
+              <family>sars_date_country_count.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>186</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Confirmed (sars_date_country_count.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Recovered (sars_date_country_count.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Deaths (sars_date_country_count.csv):qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Country:nk]' palette='cyclic_10_0' type='palette'>
+            <map to='#1ba3c6'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#1ba3c6'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#1fae81'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#26afc2'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#28b599'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#2ea865'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#31bbbe'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#32bdb1'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#3da249'>
+              <bucket>&quot;Hong Kong SAR, China&quot;</bucket>
+            </map>
+            <map to='#4f7cba'>
+              <bucket>&quot;Viet Nam&quot;</bucket>
+            </map>
+            <map to='#5ca536'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#6976be'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#8371c2'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#8cb12c'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#9e6dc2'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#ba6bc0'>
+              <bucket>&quot;Taiwan, China&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#d4bb21'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#d669be'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#e33233'>
+              <bucket>&quot;Republic of Korea&quot;</bucket>
+            </map>
+            <map to='#e44023'>
+              <bucket>&quot;Republic of Ireland&quot;</bucket>
+            </map>
+            <map to='#e670b6'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#eb374b'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#ecb921'>
+              <bucket>&quot;Macao SAR, China&quot;</bucket>
+            </map>
+            <map to='#ee601b'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#f43c63'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#f678ae'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#f8557f'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#f88113'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#f89718'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#f8ad1e'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#fc6f9b'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Country (cov19_country_count.csv):nk]' palette='tableau-10-medium' type='palette'>
+            <map to='#1ba3c6'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#1ca4c5'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#1ea6c4'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#1fae81'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#20a8c4'>
+              <bucket>&quot;Andorra&quot;</bucket>
+            </map>
+            <map to='#20af84'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#21ad7c'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#22aac3'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#22b088'>
+              <bucket>&quot;Cabo Verde&quot;</bucket>
+            </map>
+            <map to='#23ac77'>
+              <bucket>&quot;Central African Republic&quot;</bucket>
+            </map>
+            <map to='#23b18c'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#24acc3'>
+              <bucket>&quot;Antigua and Barbuda&quot;</bucket>
+            </map>
+            <map to='#25aec2'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#25b290'>
+              <bucket>&quot;Burma&quot;</bucket>
+            </map>
+            <map to='#26ab73'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#26b494'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#27b0c1'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#28aa6e'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#28b598'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#29b2c1'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#29b69c'>
+              <bucket>&quot;Brunei&quot;</bucket>
+            </map>
+            <map to='#2ba96a'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#2bb4c0'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#2bb79f'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#2cb9a3'>
+              <bucket>&quot;Botswana&quot;</bucket>
+            </map>
+            <map to='#2da865'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#2db6c0'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#2eb8bf'>
+              <bucket>&quot;Bahamas&quot;</bucket>
+            </map>
+            <map to='#2ebaa7'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#30a761'>
+              <bucket>&quot;Comoros&quot;</bucket>
+            </map>
+            <map to='#30babf'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#30bbab'>
+              <bucket>&quot;Bolivia&quot;</bucket>
+            </map>
+            <map to='#31bcaf'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#32a65c'>
+              <bucket>&quot;Congo (Brazzaville)&quot;</bucket>
+            </map>
+            <map to='#32bcbe'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#33bdb3'>
+              <bucket>&quot;Benin&quot;</bucket>
+            </map>
+            <map to='#34bebd'>
+              <bucket>&quot;Barbados&quot;</bucket>
+            </map>
+            <map to='#34bfb7'>
+              <bucket>&quot;Belize&quot;</bucket>
+            </map>
+            <map to='#35a558'>
+              <bucket>&quot;Congo (Kinshasa)&quot;</bucket>
+            </map>
+            <map to='#36c0bb'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#36c0bd'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#37a453'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#39a34f'>
+              <bucket>&quot;Cote d&apos;Ivoire&quot;</bucket>
+            </map>
+            <map to='#3ca24a'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#3ea146'>
+              <bucket>&quot;Cuba&quot;</bucket>
+            </map>
+            <map to='#41a041'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#439f3d'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#489f3a'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#4f7cba'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#50a138'>
+              <bucket>&quot;Djibouti&quot;</bucket>
+            </map>
+            <map to='#537bba'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#577abb'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#58a336'>
+              <bucket>&quot;Dominica&quot;</bucket>
+            </map>
+            <map to='#5f78bc'>
+              <bucket>&quot;West Bank and Gaza&quot;</bucket>
+            </map>
+            <map to='#5fa535'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#6377bd'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#67a733'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#67bf5c'>
+              <bucket>&quot;Sao Tome and Principe&quot;</bucket>
+            </map>
+            <map to='#6876bd'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#6c76be'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#6fa932'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#7075bf'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#729ece'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#7474bf'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#76ab30'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#7873c0'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#7d72c1'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#7ead2e'>
+              <bucket>&quot;Equatorial Guinea&quot;</bucket>
+            </map>
+            <map to='#8171c1'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#8571c2'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#86af2d'>
+              <bucket>&quot;Eritrea&quot;</bucket>
+            </map>
+            <map to='#8970c3'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#8d6fc3'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#8db12b'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#926ec3'>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+            </map>
+            <map to='#95b32a'>
+              <bucket>&quot;Eswatini&quot;</bucket>
+            </map>
+            <map to='#966ec3'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#9b6ec3'>
+              <bucket>&quot;Timor-Leste&quot;</bucket>
+            </map>
+            <map to='#9db528'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#9f6dc2'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#a46dc2'>
+              <bucket>&quot;Tanzania&quot;</bucket>
+            </map>
+            <map to='#a4b726'>
+              <bucket>&quot;Fiji&quot;</bucket>
+            </map>
+            <map to='#a86cc1'>
+              <bucket>&quot;Tajikistan&quot;</bucket>
+            </map>
+            <map to='#acb925'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#ad6cc1'>
+              <bucket>&quot;Taiwan*&quot;</bucket>
+            </map>
+            <map to='#b16cc1'>
+              <bucket>&quot;Syria&quot;</bucket>
+            </map>
+            <map to='#b4bb23'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#b66bc0'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#ba6bc0'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#bf6abf'>
+              <bucket>&quot;Suriname&quot;</bucket>
+            </map>
+            <map to='#bfbc21'>
+              <bucket>&quot;Gambia&quot;</bucket>
+            </map>
+            <map to='#c36abf'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#c3bc21'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#c7bc21'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#c86abf'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#cbbb21'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#cc69be'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#cfbb21'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#d169be'>
+              <bucket>&quot;South Sudan&quot;</bucket>
+            </map>
+            <map to='#d3bb21'>
+              <bucket>&quot;Greenland&quot;</bucket>
+            </map>
+            <map to='#d669be'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#d7bb21'>
+              <bucket>&quot;Grenada&quot;</bucket>
+            </map>
+            <map to='#d86abc'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#daba21'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#db6bbb'>
+              <bucket>&quot;Somalia&quot;</bucket>
+            </map>
+            <map to='#dd6cba'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#deba21'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#df3029'>
+              <bucket>&quot;Mauritania&quot;</bucket>
+            </map>
+            <map to='#df3227'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#e06db8'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#e1312d'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#e13725'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#e23131'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#e26fb7'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#e2ba21'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#e33235'>
+              <bucket>&quot;Moldova&quot;</bucket>
+            </map>
+            <map to='#e33d24'>
+              <bucket>&quot;Maldives&quot;</bucket>
+            </map>
+            <map to='#e44223'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#e53339'>
+              <bucket>&quot;Monaco&quot;</bucket>
+            </map>
+            <map to='#e570b6'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#e6343c'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#e64721'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#e6ba21'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#e73540'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#e74c20'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#e871b4'>
+              <bucket>&quot;Seychelles&quot;</bucket>
+            </map>
+            <map to='#e93544'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#e9511f'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#ea3648'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#ea72b3'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#eab921'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#eb374c'>
+              <bucket>&quot;Namibia&quot;</bucket>
+            </map>
+            <map to='#eb571d'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#ec5c1c'>
+              <bucket>&quot;Liechtenstein&quot;</bucket>
+            </map>
+            <map to='#ed384f'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#ed665d'>
+              <bucket>&quot;Western Sahara&quot;</bucket>
+            </map>
+            <map to='#ed74b2'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#ee3853'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#ee611b'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#eeb921'>
+              <bucket>&quot;Holy See&quot;</bucket>
+            </map>
+            <map to='#ef3957'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#ef6619'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#ef75b1'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#f13a5b'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#f23b5f'>
+              <bucket>&quot;Niger&quot;</bucket>
+            </map>
+            <map to='#f2b921'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#f37117'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#f43c63'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#f44067'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#f47615'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#f477ae'>
+              <bucket>&quot;San Marino&quot;</bucket>
+            </map>
+            <map to='#f5446c'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#f54870'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#f64c75'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#f67b14'>
+              <bucket>&quot;Laos&quot;</bucket>
+            </map>
+            <map to='#f6b921'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#f75079'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#f7547e'>
+              <bucket>&quot;Papua New Guinea&quot;</bucket>
+            </map>
+            <map to='#f778ad'>
+              <bucket>&quot;Saint Vincent and the Grenadines&quot;</bucket>
+            </map>
+            <map to='#f85883'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#f88113'>
+              <bucket>&quot;Kyrgyzstan&quot;</bucket>
+            </map>
+            <map to='#f88413'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#f88814'>
+              <bucket>&quot;Kosovo&quot;</bucket>
+            </map>
+            <map to='#f88b15'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#f88f16'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#f89317'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#f89618'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#f89a19'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#f89d1a'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#f8a11b'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#f8a51c'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#f8a81c'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#f8ac1d'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#f8af1e'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#f8b31f'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#f8b720'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#f95d87'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#f9618c'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#fa6590'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#fa7aab'>
+              <bucket>&quot;Saint Lucia&quot;</bucket>
+            </map>
+            <map to='#fb6995'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#fb6d99'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#fc719e'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#fc7baa'>
+              <bucket>&quot;Saint Kitts and Nevis&quot;</bucket>
+            </map>
+            <map to='#fd75a3'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#fd79a7'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#ff9e4a'>
+              <bucket>&quot;Lesotho&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Country (cov19_date_country_count.csv):nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Djibouti&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Greenland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Seychelles&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Timor-Leste&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bolivia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Congo (Kinshasa)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Liechtenstein&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Saint Kitts and Nevis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Suriname&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Brunei&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuba&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sao Tome and Principe&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Taiwan*&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Moldova&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cabo Verde&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dominica&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Grenada&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mauritania&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Antigua and Barbuda&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tajikistan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Benin&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Comoros&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Namibia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Saint Lucia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;South Sudan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Maldives&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tanzania&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Central African Republic&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kyrgyzstan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Monaco&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Somalia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Barbados&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Equatorial Guinea&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Laos&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Belize&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Eswatini&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lesotho&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Congo (Brazzaville)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fiji&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Papua New Guinea&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Burma&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Botswana&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cote d&apos;Ivoire&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Saint Vincent and the Grenadines&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;West Bank and Gaza&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Eritrea&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Holy See&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bahamas&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kosovo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Andorra&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Gambia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Niger&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;San Marino&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Syria&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Western Sahara&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cov19_country_count.csv' id='cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706'>
+            <properties context=''>
+              <relation connection='textscan.1d83qr90l6fie91b3m0zk1p5pwbu' name='cov19_country_count.csv' table='[/Users/lancy/Desktop/data/cov19_country_count#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:E189:no:A1:E189:2' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Confirmed' ordinal='1' />
+                  <column datatype='integer' name='Deaths' ordinal='2' />
+                  <column datatype='integer' name='Recovered' ordinal='3' />
+                  <column datatype='integer' name='Active' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706' table='[Extract].[cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706]' type='table' />
+            </properties>
+          </object>
+          <object caption='cov19_date_country_count.csv' id='cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B'>
+            <properties context=''>
+              <relation connection='textscan.1d83qr90l6fie91b3m0zk1p5pwbu' name='cov19_date_country_count.csv' table='[cov19_date_country_count#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='integer' name='Confirmed' ordinal='2' />
+                  <column datatype='integer' name='Deaths' ordinal='3' />
+                  <column datatype='integer' name='Recovered' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B' table='[Extract].[cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B]' type='table' />
+            </properties>
+          </object>
+          <object caption='sars_country_count.csv' id='sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116'>
+            <properties context=''>
+              <relation connection='textscan.1d83qr90l6fie91b3m0zk1p5pwbu' name='sars_country_count.csv' table='[/Users/lancy/Desktop/data/sars_country_count#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:D32:no:A1:D32:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Confirmed' ordinal='1' />
+                  <column datatype='integer' name='Deaths' ordinal='2' />
+                  <column datatype='integer' name='Recovered' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116' table='[Extract].[sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116]' type='table' />
+            </properties>
+          </object>
+          <object caption='sars_date_country_count.csv' id='sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63'>
+            <properties context=''>
+              <relation connection='textscan.1d83qr90l6fie91b3m0zk1p5pwbu' name='sars_date_country_count.csv' table='[/Users/lancy/Desktop/data/sars_date_country_count#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:E2539:no:A1:E2539:2' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='integer' name='Confirmed' ordinal='2' />
+                  <column datatype='integer' name='Deaths' ordinal='3' />
+                  <column datatype='integer' name='Recovered' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63' table='[Extract].[sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Confirmed]' />
+              <expression op='[Confirmed (cov19_country_count.csv)]' />
+            </expression>
+            <first-end-point object-id='sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116' />
+            <second-end-point object-id='cov19_country_count.csv_CAC40EF10F74414CBD1479223339D706' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Confirmed]' />
+              <expression op='[Confirmed (cov19_date_country_count.csv)]' />
+            </expression>
+            <first-end-point object-id='sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116' />
+            <second-end-point object-id='cov19_date_country_count.csv_9A3E6E7D47654D8F96EF9401F648D71B' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Confirmed]' />
+              <expression op='[Confirmed (sars_date_country_count.csv)]' />
+            </expression>
+            <first-end-point object-id='sars_country_count.csv_CBDA2C9137DD4BB29E1A03E729199116' />
+            <second-end-point object-id='sars_date_country_count.csv_C8312FD7EBEB4EBCAE1277789990BB63' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='SARS_confirmed page'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sars_country_count' name='federated.1ukkj5517ipw851d8k09o05hcg93' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ukkj5517ipw851d8k09o05hcg93'>
+            <column caption='Confirmed (sars date country count.csv)' datatype='integer' name='[Confirmed (sars_date_country_count.csv)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country (sars_date_country_count.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Country (sars_date_country_count.csv)]' derivation='None' name='[none:Country (sars_date_country_count.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Confirmed (sars_date_country_count.csv)]' derivation='Sum' name='[sum:Confirmed (sars_date_country_count.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country (sars_date_country_count.csv):nk]' member='%null%' />
+              <groupfilter from='&quot;Australia&quot;' function='range' level='[none:Country (sars_date_country_count.csv):nk]' to='&quot;Viet Nam&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='page-card-title'>
+            <format attr='title' value='Month of Date '>
+              <formatted-text>
+                <run>Month of Date </run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Confirmed (sars_date_country_count.csv):qk]' />
+              <text column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' />
+              <color column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <pages>
+          <column>[federated.1ukkj5517ipw851d8k09o05hcg93].[mn:Date:ok]</column>
+        </pages>
+        <page-trail-options enabled='true' lines='true' />
+      </table>
+      <simple-id uuid='{2105E8CD-F26A-4FB7-91C3-089674D766C3}' />
+    </worksheet>
+    <worksheet name='SARS_deaths_page'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sars_country_count' name='federated.1ukkj5517ipw851d8k09o05hcg93' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ukkj5517ipw851d8k09o05hcg93'>
+            <column datatype='string' name='[Country (sars_date_country_count.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Deaths (sars_date_country_count.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Country (sars_date_country_count.csv)]' derivation='None' name='[none:Country (sars_date_country_count.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Deaths (sars_date_country_count.csv)]' derivation='Sum' name='[sum:Deaths (sars_date_country_count.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country (sars_date_country_count.csv):nk]' member='%null%' />
+              <groupfilter from='&quot;Australia&quot;' function='range' level='[none:Country (sars_date_country_count.csv):nk]' to='&quot;Viet Nam&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Deaths (sars_date_country_count.csv):qk]' />
+              <text column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' />
+              <color column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <pages>
+          <column>[federated.1ukkj5517ipw851d8k09o05hcg93].[mn:Date:ok]</column>
+        </pages>
+        <page-trail-options enabled='true' lines='true' />
+      </table>
+      <simple-id uuid='{218F78D0-6DB8-4356-82E3-ABB9BBE17A5B}' />
+    </worksheet>
+    <worksheet name='SARS_mortaluty_rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>SARS mortality rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sars_country_count' name='federated.1ukkj5517ipw851d8k09o05hcg93' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ukkj5517ipw851d8k09o05hcg93'>
+            <column caption='Death Rate' datatype='real' name='[Calculation_3520055756230832128]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Deaths]/[Confirmed]' />
+            </column>
+            <column datatype='integer' name='[Confirmed]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3520055756230832128]' derivation='Sum' name='[sum:Calculation_3520055756230832128:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country:nk]' direction='DESC' using='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' z-order='1' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6811602115631104' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk] + [federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk])</rows>
+        <cols>[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country:nk]</cols>
+      </table>
+      <simple-id uuid='{1E846921-715C-465A-8685-60743A1A75EC}' />
+    </worksheet>
+    <worksheet name='SARS_recovered_page'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sars_country_count' name='federated.1ukkj5517ipw851d8k09o05hcg93' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ukkj5517ipw851d8k09o05hcg93'>
+            <column datatype='string' name='[Country (sars_date_country_count.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Recovered (sars_date_country_count.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Country (sars_date_country_count.csv)]' derivation='None' name='[none:Country (sars_date_country_count.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Recovered (sars_date_country_count.csv)]' derivation='Sum' name='[sum:Recovered (sars_date_country_count.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country (sars_date_country_count.csv):nk]' member='%null%' />
+              <groupfilter from='&quot;Australia&quot;' function='range' level='[none:Country (sars_date_country_count.csv):nk]' to='&quot;Viet Nam&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Recovered (sars_date_country_count.csv):qk]' />
+              <text column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' />
+              <color column='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <pages>
+          <column>[federated.1ukkj5517ipw851d8k09o05hcg93].[mn:Date:ok]</column>
+        </pages>
+        <page-trail-options enabled='true' lines='true' />
+      </table>
+      <simple-id uuid='{3FFECB2F-07FA-469C-AF4B-A73D497AF5B1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Country month trend '>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='94000' id='7' param='horz' w='98400' x='800' y='5000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='94000' id='5' w='82400' x='800' y='5000'>
+              <zone h='85007' id='3' name='SARS_confirmed page' w='54934' x='800' y='13993'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='47000' id='12' name='SARS_recovered_page' w='27466' x='55734' y='52000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='47000' id='13' name='SARS_deaths_page' w='27466' x='55734' y='5000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='currpage' _.fcp.SetMembershipControl.true...type-v2='currpage' count='2' h='8993' id='9' name='SARS_confirmed page' name1='SARS_deaths_page' name2='SARS_recovered_page' synchronized='1' w='54934' x='800' y='5000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='94000' id='6' is-fixed='true' param='vert' w='16000' x='83200' y='5000'>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='94000' id='8' name='SARS_confirmed page' pane-specification-id='0' param='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' w='16000' x='83200' y='5000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='4000' id='16' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run bold='true' fontcolor='#59a14f' fontsize='15'>SARS Country Trend by Month</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='31' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='30' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='4000' id='16' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#59a14f' fontsize='15'>SARS Country Trend by Month</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47000' id='13' is-fixed='true' name='SARS_deaths_page' w='27466' x='55734' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='85007' id='3' is-fixed='true' name='SARS_confirmed page' w='54934' x='800' y='13993'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='94000' id='8' name='SARS_confirmed page' pane-specification-id='0' param='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' w='16000' x='83200' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47000' id='12' is-fixed='true' name='SARS_recovered_page' w='27466' x='55734' y='52000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='currpage' _.fcp.SetMembershipControl.true...type-v2='currpage' count='2' h='8993' id='9' name='SARS_confirmed page' name1='SARS_deaths_page' name2='SARS_recovered_page' synchronized='1' w='54934' x='800' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5BACB3AB-73CF-4DF9-B423-E2AE900C281D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='SARS_mortaluty_rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1ukkj5517ipw851d8k09o05hcg93].[sum:Calculation_3520055756230832128:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{41DAE8CA-D97F-47B1-9B35-62D94B0B65CA}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Country month trend '>
+      <viewpoints>
+        <viewpoint name='SARS_confirmed page'>
+          <current-page>
+            <multibucket>
+              <bucket>#2020-06-01 00:00:00#</bucket>
+            </multibucket>
+          </current-page>
+          <highlight>
+            <color-one-way>
+              <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='SARS_deaths_page'>
+          <current-page>
+            <multibucket>
+              <bucket>#2020-06-01 00:00:00#</bucket>
+            </multibucket>
+          </current-page>
+        </viewpoint>
+        <viewpoint name='SARS_recovered_page'>
+          <current-page>
+            <multibucket>
+              <bucket>#2020-06-01 00:00:00#</bucket>
+            </multibucket>
+          </current-page>
+        </viewpoint>
+      </viewpoints>
+      <active id='16' />
+      <simple-id uuid='{9C9F961E-B668-4760-B425-27719FEEEF2C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='SARS_confirmed page'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>7</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]</field>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[yr:Date (cov19_date_country_count.csv):ok]</field>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E8ED8398-BAF7-4364-B805-E4CCFFAB9A1D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='SARS_deaths_page'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2020-06-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]</field>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[yr:Date (cov19_date_country_count.csv):ok]</field>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EB8D049C-B7B2-43CD-95DE-4A8B439CB0CA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='SARS_recovered_page'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>7</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[none:Country (sars_date_country_count.csv):nk]</field>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[yr:Date (cov19_date_country_count.csv):ok]</field>
+            <field>[federated.1ukkj5517ipw851d8k09o05hcg93].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{47B78B79-375F-40A8-AB5C-FCF68EC5C8A2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Country month trend ' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='SARS_mortaluty_rate' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO29eZQd133f+al6+751v/d6B9BAYycIihJJmbapUBKtKCNbcSSHimQnx45n
+      MnMymfHEM+OJPYolO4njyB6NkxMvkcbHzrEUy5FoW4sjUrJJiRRJcAGxNrqBXtDb2/f91TJ/
+      PLzHrq7XIIBudoPo+zmnD9B1u6puVd3vvb/7+91F0nVdRyDYo8i7nQGBYDcRAhDsaYQABHsa
+      IQABAK1GhblrC7RVbdO/0dQ2yk3S34lYdzsDgt1H1zW++p//hIkTpwkNBHj5hRc48a6HUZtN
+      rCgoisK1lSS+9hKvZQZ4/wNjlIsFHMFhAjaFYGwUl92y249xRwgBCEDX0WweHn7o3bz8zF8R
+      nzzED/76O1g9IbxSnWqrTalc4/SJOCPBg7zw7a9y4KEPcuGFZ7Dbnfz43/v4bj/BHSNMIAFI
+      MkFbmy9/+WvYgn7OvvQSjmCY9PVLXJxdwu5wERmIEAhHmT1zFldkhNMnDnNkyI/mHsMuS7v9
+      BHeMJOIAgi6aqiJbLCiKgsViRdNUZNmC1C3fuo6qaTeOaXzzL/+cB3/kg0QDnl3N91boCUBR
+      FMrl8m7nRyDYUXoC0HWdnWwMCoUCfr8fWRZWmGD36HWCJUlCknbOlpMkCVmWhQAEu4oofYI9
+      zZYFoOs6mtYxnTRtfZBE7/3eNa1Eb1twt3FHcYB6Oc+LL73Oe//WY1x69QzVlsqxqX1cvLJI
+      aCDO8SP7uXbpHIl8mcGBCJlciX3jI2D1MBILbfMjCAR3zh0JwOkNMhQOoraq6K4IJ8d0Xj67
+      wg+//2EuvfIGAMWGzsOnDvPsmYvIssTs1QXc/iDxaBBdVdE0jeuZVf5m5kXDtd12Fx89/cGt
+      P5lAcAvckQB0TUNRFFRdRqmUyaAyFLWTzJRoqwqtZhOp3SadKzBx+DiOao611TReq0apBSGH
+      FVmWWUgv89m//PeGa8f8A3zs3X97Rzvkgr3LHfUBGrUystdDIV9hcn8UzRvj+Mnj1BMLHDl5
+      H/V6nSNHJ8nVdfbFB/ANxjj90GnsngAhx5sFezWfNF+73SRXLd75EwkEt8EdtQBuX5Bjx4K9
+      3yM3/j1y8tSN/9kBOO4PAxAMdv724AFjxHAmuWC6drVZY62YIuINmtIEgu1mV92gh6ITpmMe
+      h5uhwOAu5EawF9lVAYyE46ZjTpuDsEfU/oKd4a4MhIkOsGCnuCsFIBDsFEIAgj2NEIBgTyME
+      INjTCAEI9jRCAII9jRCAYE8jBCDY0wgBCPY0QgCCPY0QgGBPIwQg2NMIAQj2NEIAgj2NEIBg
+      TyMEINjTbG1/AF3j8oVzVBoqR49Mcv78ZYbGJ9k3GmVt8RrziSz7x0dYTWQ5dGCMWksiPihm
+      ewnuHra4QYZGOpVH1dpcm7Fx4j0PceW1s0yMRlnNlHjgyDjfO3MRr8/D6+evEB0aJjYQQNO0
+      GyvK9d9uR1XVrWVLILhFtiQAXWkiuwKMBlTWck3a7RsFW9VA1VDaCiOTU9hrBRJradrlLIXW
+      GAFbZ8qjRP+pj2JKpGCn2FoLYHUxGLCSqcucfnCSC2fPMHLgCLl8jonRQS4sJLnv5CkKGZlT
+      w3GuXk/ht0vIN1ailjbZWUSsGC3YKbYkAEmSOXz8vt7v73nkEUP6wPA4AO6REQBOh8RyJ4K7
+      C1HVCvY0QgCCPY0QgGBPIwQg2NMIAQj2NEIAgj2NEIBgTyMEINjTCAEI9jRCAII9jRCAYE8j
+      BCDY0wgBCPY0QgCCPY0QgGBPIwQg2NMIAQj2NEIAgj2NEIBgT7NlAeSSy7x29jwtpcUbr5wh
+      W6wDUMqleO3cBSqVEpenr9JqNsgXylvOsECwnWxJALrW4tL0PLFojNTsDENHT3Ht8kV0YPba
+      dSbjAV586RWQWrx69hJNTd+mbAsE28PWlkXRFFqaRDlzlaW0lR86bMMiWzppkgWXy05kaIRy
+      LkuzVGX2YgP3Q4/gllU0TUNV+i+A1W63t5QtgeBW2dqyKBYX8ZCLbKnBqfvGeOX7zxMdniCV
+      TDHgs/PiuVlOnnqQ/JqMd2yYq0sZnFawylZkWcZitfS9rs1m20q2BIJb5qYCuHjxIhcvXuTA
+      gQM8+OCD5j+QJI6eeuDGfyUGI/E3F7uKDjI+1TkeOngQJBgcmRCrvgnuKm4qgGw2S6FQYHV1
+      ddO/WV+gDSu9SesWPrzxN6LsC+42biqAWCzG1NQUqVRqp/IjEOwomwqgVqvx1FNPcejQIUKh
+      0E7mSSDYMTZ1g7rdbj784Q9TrVZ3Mj8CwY5y0zjA0tISQ0NDlEqlncqPQLCjbGoC6brO8ePH
+      cTqdLCws7GCWBIKdY1MBzM/Pc+bMGa5fv87jjz++k3kSCHaMTU2gVqtFo9HAYrGIyKzgnmXT
+      FmBqaorJyUlAbFkkuHfZVACyLHPx4kXm5+cZGhri3e9+907mSyDYETY1gRYXF3n66afRNG3T
+      3RwFgnc6mwpgdHSU973vfTzxxBNYrVvcTVUguEvZtGS3Wi2++93vsrS0RDQa3ck8CQQ7xqYt
+      gMvl4gMf+ACZTEYEwgT3LDeNBK+srDA8PEyhUNip/AgEO8pNBfDII4/gcDg4efLkTuVHINhR
+      biqAH/zgBzSbTa5evbpT+REIdpSbCuDUqVOsrq5y7NixncqPQLCjbCqAfD7P008/TTQaZWVl
+      5ZYupqnrJ7nrqDfiB7qu3zhye+i6jl5NoxeX0NXWbZ4tELw1m7pBl5aWGBgYYGRkhPPnz296
+      gUYlz1899xqPv/swZ2eWCIQGOXnsILPnz5IqVQiHQuQKFSZGh5EcPkZjtza5RlfbaK//Idr8
+      s6C2kYLjWB7+p0jB8dt/SoFgEzYVwMGDB3E6nQCbjgbVdZVLF2eJDARYWy3ynvc+zMVX3gCg
+      3JZ4+P4jPHfmMrKkc21+EZc3wFA0iK7ewrIo838NM9968165aygv/y786K+ALAJzgu1h05Lk
+      druZmpq66cm60ka2W0lfX2LowDjLqxnamkajXkdut1lNZJg4fAxrOUM6mcVhUSm1IWR/62VR
+      lNR5s8mUn8eq1pAckdt9ToGgL1uqSmWbk/tPP8DkwUN4PW7mZmc5dt8J2u0GR45PsZzKcSAW
+      oeqxMzIxzkqqQMh+ayNLJWfALACbGyz2rWRZIDCwLbaEz+cDYPLwkc4BV6eQHvIGAPD7/QBM
+      jLlv+ZpSaJ/5mCeCZPduIacCgZG7eHXoTVoKMTdBsI3cxQIQCN5+hAAEexohAMGeRghAsKcR
+      AhDsaYQABHsaIQDBnkYIQLCnEQIQ7GmEAAR7GiEAwZ5GCECwpxECEOxphAAEe5p37NxCrVah
+      PXsWvdXCdug+LMGB3c6S4B3IO1IAai5J6ff/JWpiEQDJ48f/c/83tn1HxXwBwW3xjjSBas/8
+      aa/wA+jVEtWn/qC3/IpAcKu8IwWgrs6bjyWug9Z/lQmBYDO2ZgLpGtMXL1CuNjl0ZJKL56eJ
+      jx9gcjzOyvwMC8kc+8aGWUvkOHhgjHrbwlA0uOVMW+ITKAvTxmPRUZD7rzIhEGzGFvsAEgen
+      DvPGyy+zMLvM/Y88zPSrb6CPx0nkqrz72H6efek8Lo+bs+dnGIjHiA8GervOaGr/nWcURYE+
+      u9LoeidNCpg7vFIg0lmJTuxmI7gNtigAndfPvMK+E6dprs1Tb6pomtpZIlHVaDRbjB06hqNR
+      YHU5idQoU2hB0C4jyzKS3L/DKssyuiT1XUpx0/MkCVm+YdFpKkpqrfOA0SHRMgg2ZcsmkM3l
+      YnnuKpNTk8ycf5XRg8fI5/Psn4gxvZTmvhMnKWQl7h+KcfV6ioBd6jlqNtt9UpZltD5pknRD
+      AH1WjJBunKcW8+T+4HO0rpwHCexHThH+uV/A4t+66SW499iaAGQr9z/wQO/XBx962JD8ntgo
+      APGhIQBOnXz7V3QrffWPaF54tfd789wZSl/7Y0I/80/RdR0ltUbjwutIDieu+x7E4g/0/lZv
+      t1FLeSSbHYsvIFyqe4B3ZBzgZjQuvm4+duks6DqNi2dJ/86vo9eqAFiHRon+889giw7RXlsh
+      +4XP05qbQXI48T3+YQIf/QSSpWM+6e02Wq2KZLcjOV2G1ktrtdDrVSSHs/MjhPOO4Z4TgCUY
+      Rs0kjccCIXRNpfDlL/QKP4Cytkzp618h/NP/hOwXPk9zurMKtt5qUnzqT7CNjOF55DFa1+fJ
+      fPE/0Fq4hsUfIPCRj+N7/EMANGcukf3//iPttWUskQHCH/8Z3A89KkTwDuEdGQe4GbbR/eZj
+      Y/vRVZV2ctWU1l5dQi3mac3NmNLqr7+M1mqS+p3foHnlInqzgZJOkv3D/0hj+gJ6vUbyt36N
+      1uI19FYTZW2F9O/9Nu3l62/Lswm2n3uuBei/oqKEZLFiGxqlNT9rSLGNTiBZ7UgOJ3qraUiT
+      vT7aK0u015aNl1MV6q+fQW810UrGDQT1Rp36xbPYxybQ6jWK3/4GresLOPZP4v/gh5Htjm14
+      SMF2sasCGPCGeeLEjxiOBd2dhXTxDCKNGTvVkq/TmbbERrHf90Odg5pK68KLb3kvSZaxBMOm
+      49bwILI/gDUySKtcNKTZ9x3s2PQWC7pqjDLLbg+yu/9CvbLbg9ZssPrrv0xj+iIA5Wefofr6
+      GYZ/6bNIYuPxu4Zd/RIeh4uDoVHabXB67TeO3VhB2u5FCk4YT3B1CrDsDWId3geAripwCwK4
+      mUdnU3tdkrANjSC73Kgt4xZN9gOHcBw42Pc0x/5D1M+d7RX+LvU3XqNx5RKu4/e9dX4FO8Ku
+      V0WVTJ5aTSM46MXudVGrlTj76ss49AaBYp5cU0ep15HdbmIBhStr32efXef63DKDkTCj3rd3
+      v4COOPrFJCSQNulCSRJKqf/eyuomxwW7w653gqvZMkq1TrvRorCSpZDNs7xW4PryAgtrZfbF
+      vFSaKlcXs8xmmhydGGXu+nXyLY3FzN1bmJyT/XfXcWxyXLA77GoLoLfqOCODuJw6ChbqiRL7
+      TkzgscqEQnF8zjoOFPJ1FYfDSsSm8caFS3gcbuqSzlDg7t0sQ/Zu0j/wdjYT0RoNyq+9SiuR
+      wH34CO6jR5HkXa+P9hy7KgDJ7iI88mYk1hv24nB6eOzRv4VeWEBfyQPwYw9OIEkSiYKK3z7A
+      AZeM01btDInQlN3K/h2jNRos/PqvUfrBCwBIViuxT/00sU/8AxE/2GF2VQBf/vKX+S8vf8Nw
+      zOf04FlR0bNX0ZZeMJ7gHsAyJTM9c5bWdDfiq6MVMljr53G5v0T1xVdpzq0ZTnO4X8Fj/RKl
+      1y/QWjCmuZ97HndVo3BxBiVtDKD5nvlrHMtpslcX0dYF0AAC3/or7Ocvk140Xg8g/Od/ATYb
+      6SVzWuwrX6F+bY70U091hrfeQPrc5xip1rD4fLRSKSoXLqI16jiGR/AeP4Zks/V9h4KtsasC
+      eOQDP8x/WjYKwO138eSTT6Jd+w7qS8ZhDVJkCOsTT1L7b1DLr9u7ODaE/eRJ/E8+Sb6VoVo3
+      FmTPIw8SevJJUmtXqGMsyMEf+SECH/kp1i6+QGvBaIJE3v8+vD/8fq4/+5eoxbwhLf6hH8N5
+      /BQLf/nHpuca+fGPIDmdLH77q6a0/R/7GKmvfIVkLGpMkCQOPvQQ1sgAl//J/4haKnWOX19m
+      MBZn/H/9Z6J1eBsQRucu4NpvjlZLNhuOsTEy3/jGm4X/BrlnnqGVSu1U9vYUQgC7gG1g0HRM
+      kmVs4TBqpWJK09pt9GbLdFywdYQA7jI8x4+ZjtnCYezx2C7k5t5HCOAuw+Iy76Us2azIdrFB
+      +NuBEIBgT7PrQyEEt4eu67QyObRWG0c0grzOPaprGq10Fl3TcAwOIFnfnAutqyrNVBZJlrAP
+      RgxBN62t0EpnkGw27ANh42SfZotmJostGMDqebN10nWddr6IWq9jj4SxOB2GtFY2j9Zs4RiM
+      INs35DGTQ1dV7IMR5HUDA3VVpZnOgiThGAj3JiMBaIpCK3Ujj5GwYV641mrRTOewOO3YwiFD
+      /tV6g1Y2j9Xjxhr0G9KUak0I4J2E1mxx7f/5fRJ//t/Qmi38p45x9LP/B86ROEqlyuy//h0y
+      3/keuqoSevhdHP7VX8QeDtLKFbjy6d8k/9JrSLLMwOOPcuiX/mesXg+N1QTTv/wbFN+4hOyw
+      E//xJzjwv/w8Foedysw1rvzLf0flyjWcwzGmfuUXCL3nNLqmcf2LX2L5j/8MpVzFc2g/hz/9
+      v+E7NoXWbjP//36B1a9+A63RxH/yKIc/87/jHh9Bqda4+m//A+lv/w26ohJ48BRHf+3/xB4J
+      0S4UufKrv0Xu+ZdBkhh47L0c+hf/DJvfRzOZ5vIv/xuKr19AttuIffgDTP7Cf4/F5aR6bYEr
+      n/5NypdnsbhcDH/8I+z/n/4hksVC8Y2LzHzmt6nNL2IN+Bn/R3+f0U/+JEgS+RdeYeZffX77
+      TCBVafD6mZdJ5TtejEJmjVfOnqNUzHPx0gyNRo1cvvQWVxHcjLWnvsXyH30FpVhCazQovPQa
+      Vz772+iKyvUvfpnEU99CKVdQa3Uy3/0+1z73uwBc+63fI/Pd76NWayjlComn/orrX/wSuqIy
+      89nfJv/Sa2iNBkqxxPIffYXE176J2mwy/Sv/ltIbl9AaTWpz17n0zz+DUqmSe/5l5j7/nzot
+      UbNJ+cI0l//Fv0atN0h+/Wmuf/FLKIUSWqNJ4cxZZn71c2htheX//Ges/dnXUUqdPOaee5HZ
+      3/j36LrO3O98gfS3/wa1WkOtVEl+/WkWf++P0VWNmV//PPkXXkGrN1CKZVb+5Kus/ulfoLVa
+      XPn0b1J8/QJao0k7X2Dx9/6I9NPPotbqXP6lf0Vlehat2aKVynDtc79L4cxZlEKJi7/4GeoL
+      S9sngNWZq4wdP83izDQ6cG1+lamRMC+/8jo6TV47e5m6oqLrem8JQ1mScdocph9d19ElGd1i
+      N/7I9k6abAGbw/hjtXWua7GC3WH8sVg6aVbb5mk2uzlNljtpdnOaLkk30hzmHwk6S1L0SdMB
+      SUJyODb8ODvXk2Vzmr3zTrLP/sD03ouvnaNdqZB9zpyWfe4HnfP6pT37A5RqlcKr5/qc9yKN
+      1STVmTnD8VY2R/nCFbLfe9m0/lJtfona9RWyz5mHppfOXaJdKPZNy33vJXRVI/usOS373Iuo
+      zQb5l14zp33vRRqpDOXLs33Pq1ydp7FsjMTrikLuhVcovnERpdipjLfNBGopOhGHFVmydEL8
+      kozTYWNgeIxWJUerWGJxto038B48cmdhrIf338/ZT3/ddC1FUWDsUaSxRw3rfepAu93G9qM/
+      ge1Hf8J0XrvdxvPxn8Xz8Z/tmxb8H36RIObx/4qiMPB//RvDse592+028X/3+32fWVFVRv7g
+      T/um6cD4H/6Z4ZgkSWiA/eBBjj31F+brKQqeh97Dya+b09rtNtaAz3Tc6nWj6jq2oN+cFvB1
+      3lfATztrjGRb/D5UwOJxo1ZrhjRbwI9mtSA77Wjr50FIEha/Fzwu071kuxXdbsXqN+fR4nah
+      3riuKY9+L4qqYA34aK5tmMvt96FqOhafB7VijODbAn40WcbidKI1mqbzdIcDyWqeyITHZXiP
+      29YCjE0O88rzz+MbjJJKpYkGXbx4/ir7J8YJhQY4cd9hJIsNt03GarUiy51/bTbbTX/sdvu2
+      /7zVPe/W+4596mNYPEY36egnP4YzGGDsH/59ZMc6V6kss+/nP4Xdbmfi5z8J6zq9ssPOxM8+
+      icPvY+ynP2YsPB43o5/8Sbyjw8R/4kOGtMhj78V39BDjP/Xj2KPG1flif+eD+PaNM/rJn8Tq
+      M46EHXnyo7gGwoz9zMeR13WWkSQmfv5T2Ox29v3jf2DotEs2G/t+7hPYPW4m/tGTxjy6XYx+
+      6mN4hmIM/b2/Y0izBnyMfuLvEpg6wOAT7zOkOUeHGP3o3yZw3zFC73135z76Ni6prOv6m7Wr
+      rt9o7aUbLcKNf26k5/N5AoHAm6u5Cd4SXdepzsyx8l/+HKVSZfDxH2bw/T+CZOmYasWzF0h8
+      7VvoikL0Q48TfvQ9SDdMtdzzL5P65neQrFbiP/EhAqdPdNJUjfR3niP9zPewej2M/NRH8ExN
+      dlqrdpvk158h9/wZfMcOMfKJj2JxOgGoL6+x8idfpZnKEHr4AeIf+TFke8cMrV1bZOVLX6Nd
+      KjPwvh8i+sRjnWmluk7p/GXW/us30Jotoj/2PiI/+kgvj/kXXyX59aeRZJnYR54g+OCpTpqm
+      kfnr50l/+1ksbhfDH/vv8B491MmjopD65nfIfu8lbKEAo5/4u7gmRpEkCbXZIvHVb1J49Q0c
+      QzFGP/FRnEOdgKJaq7P8pa9trwBuByEAwd2AKH2CPY0QgGBPIwQg2NMIAQj2NL04QLvdplwu
+      79iNq9Uqmqb1vELrPUgGb9JN0rr99+1Ou9vv/Xbl61avv5t53I78r7/GrnmBFEXBYrH0MqJp
+      Ws8jpCgK1nWDpDZL2/gw25G2/l43S9N1HVVV+6ZpN6Kk63/v/l9V1c4eB3fZc9/qO7kXvpum
+      aVhuDLTbtcFwG6Ox6zN/q2kb/2470ja6Ze807Vbyf6dpb8dz3+o7uVvzf6ffbddagPUkEgnm
+      5+fxer2cPHnSkLa0tMTKygqBQICjR4/2jqdSKebn5wkGg1gsFg4eNC5TeOXKFbLZLKOjo4yP
+      jxvSLl++DEAwGGToxuYd0KmdL1y4QLlc5vjx44RCoV5ao9Hg0qVLBINBIpEIgcCby7kUCgWq
+      1Spra2ucOHEC541gUTftwoULuN1u7r//fsPHWFlZoVwu43a7TXlcXV1lcXERn8/HiRMnescz
+      mQzZbLaX/1jMOFPs6tWrpNNpYrEYBw4c6B1fXl5mZWUFv9+Pz+djdHS0l6brOnNzc2iaxuDg
+      IMHgm7vptNttLly4QLVa5dFHHzXca21tjYWFhb7fLZVKkc/n8Xg8jIyM9AqdqqpcuXKF0dFR
+      1tbWOHz4sOG86elpcrkcY2NjjI2NGdIuXLhAoVDg0KFDvefWNI25uTkKhQJOp5OhoSEikUjv
+      XtPT07TbbWRZZv/+/fh8bw6DqFQqd0cnWFEUotFoz3RYj67rDAwMoG4Y0xGNRgmFQng8nr7n
+      OZ1OgsEgzWbTlAadQNzGmkHTNEKhED6fj2rVOPZE13VkWSaXy5nOs1qtJJNJhoeHTfdpNpsG
+      ka1HVVVT070+bXBw0PRsdrudgYEBbDZbrxlfj81mIxQK0W63DcdHR0fx+Xx4PJ7OWKsNyLJM
+      q9UinU7TaDQM+YhEIn3fsaqqm343i8VCu91G0zSWl5cN50Cn8G0UPYDL5SIQCPT9bj6fD5/P
+      R71eN+R7YmICt9uNx+MxPLfFYmH//v04nU6cTqfpuZvN5t0hAJfLxdjYGAMDxvEl1WqVYDCI
+      3W4nGo2azotEItTrdQYHzZPMrVYrVqvVdE3oiOOBBx4wXFPTNJLJJI1GA6vVSjhsXkl6bGzM
+      1NJA50V3bcuNzbTf70fXdfx+vylNURS8Xq+hxeji8XgATPnwer3U63VisZjpetVqFZ/Ph8vl
+      MrUM3Ws1m82+76TRaGCz2RgeHsbheHO8TrvdxmazmZ67Xq/j9/v7fptCoUA+n8fr9eJ2uw2t
+      Ta1WIxwOUy6XTZUM0Bsf1q8sOJ1O/H6/6X4WiwWv14uqqqb35XA4cDgcWK1WQ+0PdEYimHKw
+      CzQaDVZXV01eKLvdjiRJOByOvrvAJ5NJ4vE4brd5Hm0+nycej/cK0noqlQoLCwtU1q3AIEkS
+      wWAQXdcZHR0lnU4bzpFlmVQqRSKRMBW8RqOBJEnkcjlTbZjNZvH5fMTjcVM+4vE4zWaTWq1m
+      SstkMkQiEdMHlWWZer3eM2nWY7d3hot3C22/a8bjcUMBB3rnxGKx3jvvHq/X67RaLdP7t9ls
+      yLKMw+EwPbPX6yUSiaAoSmdb23XvKxgMUqvVyOfzFIvG5egBcrmc6Zvquk6z2ex1bDe+/3a7
+      Tb1eJx6Pm1rF7jeORqOmljaXy+2+ABqNBj6fj1arZbC5ofOSV1dXDXbverxeL8vLy6YXqes6
+      oVCIXC5naM67dAW1vkmUJAmPx4PL5eL69eumAivfmBug6zr2DRPUvV6vYdTm+nxEIhEqlQqF
+      gnkh30wmQ7FY7Jv/wcFBCoWCQaRdBgcHcTqdhn4IdN5XKpUiHA6ztmZelc7pdLK8vGyqeSVJ
+      IhAIkEwmaa0b/tx9R5VKxVQhWK1WEolEz9bfmJZKpajX6+RyOVM+JEnqa6bpuk44HCaXy/U1
+      gbpC3SgAq9XaM7VaG5axd7vd1Go1VlZWTCaQz+fbfQFYrVYajQbxeNz0QaHTTA0ODpo6RNCx
+      4QqFgqlwlW4sLNVqtfrap+12m8HBQVOLoygK2WyWcrncu0aXer2Oy+ViYmLC4OqDTk0SDocZ
+      Gxsz1DKqqlKtVlFV1fSxu882MjJiqpm6MZJ2u93XXk8kElQqFVPLkUgkaDQapNPpvmZVs9ns
+      Pd96dF2nUCiQy+UM71KW5V6L0a8ljcVieDyevn2cWCzWS9+I0+nE4/EwMWHc/2H9d1vf55Mk
+      iXA4TKFQwGazmUSlaRr1ep1MJmPoH0Dnm1arVXK5nEkcuq7fHQJotVpMT0+TyWRM6T6fj0wm
+      w6VLl0w1l9PpJBQKmQpJIBDo27x28fv9zM3NmTqtkiQRj8dxuVwm4Xg8HnRdJ5lMmu4XDAYp
+      l8uk02nDeV2hKIpiMiGazSaJRIJcLmd6Lq/XS6VS6Wv2AQwMDDA4OIjfb5xg0s27JEm4XOZJ
+      K10P0MaCIEkSQ0NDeDwek+mkKAr1et3U6kHHvCsWi6YCqSgKs7OzKIpiqkigY7Mnk0lSG1a7
+      CwQCfVvKLrIsUy6X+5pw0WgUp9NpajlUVSUej2O1Wk2VkNPp3H0BJBIJAB544IG+XpRqtYrD
+      4eBd73qXQd2pVIparYYkSaZO8OrqKslk0jD9cj1dN+fS0pIhXZIkCoUCHo/HVJ3wKdUAAA0k
+      SURBVLjq9TrpdJrV1VVTgS2VSp1NulXVcL1Go8Hc3Fzf5txut+N2u7FYLAY3J3Q6kYuLi6br
+      dclkMrTbbZPJ2M1nv3OWl5ep1Wo4nc6+neBkMtm3ptc0jUaj0ddTFQwGURTFVCC7gnK73Rw5
+      csR0niRJeL1eUz5XVlZIpVKbCr/7jtPpdK8S0jSNlZUVqtUqfr/f8E5UVSWRSFCv1wkGg6Zn
+      SyaTuy+AQCBAIpFgbm6ur91ar9dJpVJcuXLF8OH8fj/Dw8OEw2FTJ9jtdvPYY49x8ODBvq5C
+      i8XCysoKlUrFUCuoqoqqqj0343qsVisTExN4vV7TNb1eL61Wy1TDWK1Wjh49yunTp02d2Uql
+      QiqVQpKkvvb1I488wrFjx0zP1rWT6/X6pv2bkZERk8djdHSUUChkiOKup1uZbEzTdZ3Dhw/3
+      FVuxWMTn85neR61Wo1arkUql+vbdFEXBbrcbvEPQaWW7320z13AsFut1eqEjin379vX1slks
+      FiYnJ3E6nUQiEdM1BwcHd18AdrudeDxOuVw2Nc3QecBoNLpprVCv100FL5lMomkaqqqSTCZN
+      57RaLZLJJAMDA4am3Waz4fP5SCQSfW32RqPBfffdZ2odujZ1rVZjfn7eMJ84nU6j6zqJRMLw
+      DD6fj3e9610cPnzYZAvn83kajQa6rpsqhYWFBfL5fM+E2kgkEmF6erqvZymbzZqCQdAp5F6v
+      l6GhIZOpUy6XKRaLfTvj3WEdGwXg8/mYmppiamqqr/dLkiSazSazs8YJ7eu/20bzqPtsa2tr
+      7N+/31AxNJtNisViZ+bbBnOsWCzSaDTI5/OmzvqVK1d2XwClUolUKkW73TZ1pkqlUm/cxkbf
+      r9Pp5Pr16yQSCVNBGB8fZ2Zmhrm5ub7BlkAg0DfY0m63KRQKNBoNky0qyzLVapWrV6+ahDow
+      MIDb7SYWixkKs9PpxGq1Mj09TSAQMNRQmqZx+fJlUqkU584ZV2YYGRkhkUhw+fJlk1nYHdhV
+      KpX6Vgq5XI6pqSlTqwIdgV+9etVkl0uS1OtcbhR+NBplbGysb0GOxWKmAOWtYLFYem7U9bzV
+      d1tdXWV4eNgUBLTb7cRiMVqtlsmR0u27dQN663E4HLu/MFYoFCIQCFCpVMjlcoYP7na7URSF
+      fD7f92MPDg7idrtNaS6XyzBsYiOKoiDLcq+26b5Mi8XC6OgoiUTC5EVZXl7G6/UyMjJi8gJl
+      Mpmeu63dbvdqUUmS+n7ILk6nk3K5bDIFZFnm0KFDfc/Zt28fmqZx4MCBvmaC2+1mdXXVMJwB
+      Ov0Kh8PRt2WATqszPj5+W1NU19bWmJiYYGFhoa9A+pHNZrFYLIRCIVMF9FbfrStSl8tl6Heo
+      qsrS0hJut5tisWiw9VVVpVQqMTExYYq679u3b/dbAOgUyHa7jXfDvlpWq5VMJkO1Wu1rS5ZK
+      JdrttskkWX/d2dlZUy3VjR6XSqVeh1bXdRYWFohEIkxOTpoKSrelmp2dNX04n89HOp2mUqmY
+      TJ0ua2trhuZZlmXsdjvFYvGmno+NdFfT6K6ssZ6uG7Rbo6+nVqsRCAQYHh7u626Ox+PUarW+
+      btd+dMcNzc/P973eZni9XpaWlpiZmenbr4DNv1s36LYxj10zLJVKmcw7VVUZHR01efXK5TKX
+      L1/e/RYA4Pr16/j9/r7Ry3g83rfDVyqVKBQKjI2NmbwQ6XSaVCqF3+/H7/ebbNRQKEQ6nWb/
+      /v0Gd6GiKCwtLVEqlUw19/33379p/ruuOUmSmJiYMJg62WyWZDKJ0+k01ZIej8fk894K8Xi8
+      58na+My5XK4XxZ6cnDRUGrqu9zrB6XS6r+9+I5VKhcuXLxOJREilUn09eP3oeq+6Juj6lvat
+      vlu73SYajVIqlQwt3Llz55iYmGBqaopMJmMQQblc7vVV1tMdprHrAiiVSlQqFVqtFj6fz/Bh
+      VlZWmJmZIRKJmFx35XK5Nz5lo3Cy2SwDAwMsLi5y+vRp0z2TySSDg4O9tXqgY65MTU1RqVR6
+      QwJuhW6/Qdf1vh6nrptwY+tWr9dRFIVQKHTL97oV8vk8ExMTLC0tGQrJ0aNHe7Vgv3z6/X5S
+      qRT7++xe0w+/38/ExATFYrFvxbUZXq/X9C66ZLNZIpEIS0tLpgqnUqkQDAYpFAqmysnr9VKr
+      1Ugmk6YKLRAI9MYXrafrPt91Afh8PkKhENFo1OTxGB4exufzsbKyQqlUMtQyuVyu532JRCKG
+      mqQb5Q2Hw1QqFVNTK0kS1WrV1HRLkmRqQt+K7gCyer2OJEmmmqY7JCOfzxviFbIsk81mGRoa
+      2rRA3C6tVouhoSESiYRpMJzFYulb8HVdZ3FxsTcUJJPJMDIyckv367a8t2MC3YyBgYHe9+oO
+      hOyytLREOp3uO0J2fHy817/ZGIk/e/YsVquVYDDIxMSEqbLZ9T6ApmkUi0VWV1dNTW82m+XS
+      pUu0221TExuJRDhy5AhHjhwxBcJkWabRaJBKpUwFslAobGp73imyLPcGfm20/5PJJLVazRTU
+      cjgcHDx4kLW1Nb7//e9vSz7m5+d7NXM/9+9m1Gq1XmS5X4xgM4rFIvv3779l8+etuNl3O3z4
+      MEeOHOm5Nddjs9mYm5tDVVWDOexwOHjwwQcJh8O9lffWc1eMBbJYLL0e+sYWwOfzMTk5ydDQ
+      kOnD3Oyld2tjXddNoup6erojGbeDUqlEsVjsa8sPDAx0vA3rpkFCx3c9MzOD2+02TTS5U+Lx
+      OJcuXeLy5ct9o739kCSJw4cPs7a2hqZpm85d6EcoFOq5oreD9d9tYwDw7NmzzM3NEQqF+ppc
+      VquVc+fOmcY5VSoVPB5Pb0jNegqFwu6bQND5CP2aZ4fD0Xes/1sRiUSIx+M9L0vX/6vrOqur
+      q724wtLSEpOTk1vKe7vd7gWurFZrXw9Q10O0HrvdzpEjR26rxn0rAoFArw91O9e1Wq195znc
+      jHq93htusl2d+IGBgV4wbv13A/r25dajqioej8f03IFAgLm5OXRdN8yQgxtxmm3J+RaRJIlG
+      o3FHhb0fi4uLBAIBLBYLhUKh9yK7w3BrtVrfSRd3gs1mQ1VVXC5XX998u90mmUwyNTVlOL6d
+      BX8nrrsRl8tlms64VRYXF/H7/VitVsN3g7d+LkVRGBwc7OvBGh8f73t+tVrdfRMIOgPbDhw4
+      0Hfk4J0QCATI5XJEo1HTC4lGo+zbtw+3271tnbdqtUq5XGZlZaWv7zoajW6bmXAv4/f7e86C
+      23EMqKpKrVajWq2a+j6VSoVsNmsaNq+qKq1Wa/cnxXdHG87NzREOh7etQ7WTdN2gsix3Olbr
+      lkApFouUSiWcTmffaYwCI91JOP1mfm2GoihcuXKFYrHIiRMnDK50VVVZXl5G13VDpFvTNMrl
+      8u6bQKlUqjf+vlgsbpsAzp8/33N3Hj16dNNo8XawcdhBF0mSeuH5fgP9BGZmZmawWCy4XK5b
+      dseura31ztkomvXOie4oVOh4nO6KSfFut5v5+XlGR0dvK6DyVlitVpxOJ+FwuO+w4Z1AlmUy
+      mUxv2uBdsALNXU83attvJt9mxGIxbDYbgUDAEAhTVbU3wG+jadodqbvrAvD7/dx///2Ew+Hb
+      9kTcDJ/PR61W682e2g10XScYDDI5OYnNZhPmzy0QCATIZrN9Z7RtxtmzZ3tzOzYui9J1sW8c
+      DmGz2Th06NDu9wHeLqanpzsP2Cc6u1PU63Xm5+cZGhpCluXbDjTtRWZmZnrfbKsu6m5sqdVq
+      9RYsWF8Zttvt3W8B3i7cbjdzc3Pb5lm6U9rtNq1WS/QBbpGuK3O7+mwWiwVVVWk0Gqa+msVi
+      uXcFUC6X0TRtVwXgdDo5ceIEsViMwcFBUfvfAt2Zetvx3WRZ7rlUW62WKUp8V8wJfrvozhra
+      OHllJ9kswi3YnIGBAc6dO9d3Zbs7Qdd1qtUquq6bhr4Eg8F7UwDJZJJoNIrL5dpWz5Lg7ac7
+      HqzflM47QdM0ms1m30lCiqLcmwLw+XxMT0+TSCRue3izYHeJx+O9NUe3g+4YLYfDweLiosEV
+      rev67gfC3g5UVe1NmtiugVqCt5/Z2VlKpRJut7vveq93QndSfHd1ufUUi8V7UwA+nw+r1dqb
+      O7px+xzB3cnY2BjZbJZ8Pn9bgbCb0Y0PdFfwXl8O7prBcG8HMzMzpNNpLly40HdCveDuo1Ao
+      kM1mcTgcfdc2vRM8Hg92u73vkinNZvPebAGgE2Gu1WqMjY3tqidIcOtYrdae/3+7WoCZmRlU
+      Ve1NtFnPqVOn7l0BtFotbDYbbrd708FqgruLgYGBbZmjsZ5isYiiKITD4b5m8D0rgO44IFH7
+      720eeOCB3s49/WIy92wfYGxszLRKgGDv4XA4cLlcnaXQ+5SFe7Z0pNNpRkZG+q44LRB0uWcF
+      0N0+qd9mdwJBl3vSQE6n08L1Kbgl7kkBhMPhnuvr7ZwKKXjnc08KoFAo9PYIczgcwg0q2JR7
+      dkaYQHAr3LOdYIHgVvj/AVJb97mGlCdaAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

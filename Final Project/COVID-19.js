@@ -1,6 +1,6 @@
 window.onload=function() {
-    var containerDiv = document.getElementById("rate"),
-        url = "https://public.tableau.com/views/RATE/Rate_compare?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
+    var containerDiv = document.getElementById("COVID19"),
+        url = "https://public.tableau.com/views/covid_19_15934070544640/COVID_19_mortality_rate?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
         options = {
             
             onFirstInteractive: function () {
