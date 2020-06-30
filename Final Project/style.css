@@ -13,9 +13,20 @@ p {
 }
 
 h2 {
-    margin: 0;
+  margin: 0;
 	padding: 0 0 5px 10px;
 }
+
+h1 {
+	padding: 0 10px 16px 10px;
+	
+}
+
+h3 {
+	padding: 0 10px 16px 10px;
+	
+}
+
 
 .numbertext {
     margin: 0;
@@ -39,11 +50,9 @@ h2 {
   }
   
 .slideshow-container  .next {
-    background-color: green;
+    background-color: orangered;
     color: white;
   }
-
-
 
 .slideshow-container  .round {
     border-radius: 50%;

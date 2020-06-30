@@ -24,7 +24,7 @@
   <a href="COVID-19.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">COVID-19</a>
   <a href="SARS.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">SARS</a>
     <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Comparsion <i class="fa fa-caret-down"></i></button>     
+    <button class="w3-button" title="Notifications">Comparison <i class="fa fa-caret-down"></i></button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
       <a href="Country.html" class="w3-bar-item w3-button">Country</a>
       <a href="Development_trend.html" class="w3-bar-item w3-button">Development Trend</a>
@@ -44,7 +44,7 @@
 <div class="w3-display-container w3-animate-opacity">
     <img src="/images/virus1.jpg" alt="boat" style="width:100%;min-height:150px;max-height:300px;">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-        <h1 onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS"> Visualization of COVID-19 and SARS</h1>
+        <h1 onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS"> Mortality rate and Recovered rate</h1>
     </div>
 </div>
 
@@ -59,29 +59,39 @@
 </body>
 
 
+<style>
+  #more {display: none;}
+  </style>
+  </head>
+  <body>
+  
+  <h2>Analysis and Conclusion</h2>
+  <p>Both SARS and COVID-19 began in December. 
+  <span id="dots">...</span><span id="more">However, the diagnosis rate of SARS dropped significantly in March 2003, while the diagnosis rate of COVID-19 keeps increasing in June 2020 (the dataset ends on June 15, 2020). The mortality rate (8.6%) and recovery rate (80.8%) of SARS are higher than that of COVID-19 (3.3% and 60.6%). However, the COVID-19 pandemic has a longer duration, spread to more countries (world-widely vs. 10 countries), infected a lot more people (16,346,398 vs 16,864), and claimed many more lives (887,338 vs. 1,626).
+   </span><p>
+  <button onclick="myFunction()" id="myBtn">Read more</button>
+  
+  <script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+  
+  </body>
 
 
-<!-- Contact Container -->
-<div class="w3-container w3-padding-14 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar"><i class="fa fa-info w3-text-teal w3-xlarge"></i> Contact Information</span></div>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Washington, DC</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> xhuang6@gwu.edu</p>
-    </div>
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar"><i class="fa fa-git w3-text-teal w3-xlarge"></i> Published</span></div>
-        <h4> Github io & Zenodo<h4> 
-        <h5><a href="https://xhuang222.github.io/G20-spending-analysis/project/index.html">xhuang222.github.io</a><h5>
-        <h5><a href="https://zenodo.org/record/3883436#.XtxWl2pKjBI">zenodo.org</a><h5>
-    </div>
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar"><i class="fa fa-external-link w3-text-teal w3-xlarge"></i> Useful Link</span></div>
-        <h4>W3schools & Google API<h4> 
-        <h5><a href="https://www.w3schools.com/">w3schools.com</a><h5>
-        <h5><a href="https://developers.google.com/chart/">developers.google.com/chart</a><h5>
-    </div>
-    </div>
-  </div>
-</div>
 
 
 <!-- Footer -->

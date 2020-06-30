@@ -12,7 +12,7 @@
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script src="COVID-19.js"></script>
-    
+
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -22,7 +22,7 @@
   <a href="COVID-19.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">COVID-19</a>
   <a href="SARS.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">SARS</a>
     <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Comparsion <i class="fa fa-caret-down"></i></button>     
+    <button class="w3-button" title="Notifications">Comparison <i class="fa fa-caret-down"></i></button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
       <a href="Country.html" class="w3-bar-item w3-button">Country</a>
       <a href="Development_trend.html" class="w3-bar-item w3-button">Development Trend</a>
@@ -42,7 +42,7 @@
 <div class="w3-display-container w3-animate-opacity">
     <img src="/images/virus1.jpg" alt="boat" style="width:100%;min-height:150px;max-height:300px;">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-        <h1 onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS"> Visualization of COVID-19 and SARS</h1>
+        <h1 onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS"> COVID-19</h1>
     </div>
 </div>
 
@@ -50,6 +50,36 @@
 
 
 <!-- Content -->
+<style>
+  #more {display: none;}
+  </style>
+  </head>
+  <body>
+  
+  <h2>Analysis and Conclusion</h2>
+  <p>The match chart shows that Yemen has the highest mortality rate of 24.2%, with an average mortality rate of 3.3%.<span id="dots">...</span><span id="more">The bubble chart shows that the outbreak of COVID-19 began and peaked in China from January 2020 to February 2020, with very few reports of the outbreak from other countries. While China kept the highest diagnosis rate in March 2020, COVID-19 patients started to emerge in other countries. From April 2020 to June 2020, COVID-19 cases increased rapidly and raged world-widely. The diagnosis rate mounted in the United States for three months, followed by Italy, Spain, France, and Germany in April; Brazil, Russia, United Kingdom, Spain, France, Turkey, and Germany in May; and Brazil, Russia, and India in June. The Sankey chart shows that COVID-19 affected numerous countries with an active rate of 23.5% and a recovered rate of 23.8%. The chart also shows that the United States has the largest proportion in each category (confirmed cases, recovered cases, death toll, active cases). </span><p>
+  <button onclick="myFunction()" id="myBtn">Read more</button>
+  
+  <script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+  
+  </body>
+
 <body>
     <div id="content">
         <div id="COVID19" style="width:900px; height:1000px;"></div>

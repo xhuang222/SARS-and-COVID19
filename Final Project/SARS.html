@@ -22,7 +22,7 @@
   <a href="COVID-19.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">COVID-19</a>
   <a href="SARS.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">SARS</a>
     <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Comparsion <i class="fa fa-caret-down"></i></button>     
+    <button class="w3-button" title="Notifications">Comparison <i class="fa fa-caret-down"></i></button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
       <a href="Country.html" class="w3-bar-item w3-button">Country</a>
       <a href="Development_trend.html" class="w3-bar-item w3-button">Development Trend</a>
@@ -42,7 +42,7 @@
 <div class="w3-display-container w3-animate-opacity">
     <img src="/images/virus1.jpg" alt="boat" style="width:100%;min-height:150px;max-height:300px;">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-        <h1 onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS"> Visualization of COVID-19 and SARS</h1>
+        <h1 onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">SARS</h1>
     </div>
 </div>
 
@@ -51,9 +51,40 @@
 
 <!-- Content -->
 
+<style>
+  #more {display: none;}
+  </style>
+  </head>
+  <body>
+  
+  <h2>Analysis and Conclusion</h2>
+  <p>The match chart shows that South Africa had the highest mortality rate of 100% (one person confirmed and dead), followed by Malaysia with a mortality rate of 40%.<span id="dots">...</span><span id="more">The average mortality rate was 8.6%. The bubble chart shows that SARS began in China in March 2003, and increased drastically from March to July 2003, in Mainland China and Hong Kong. 
+   </span><p>
+  <button onclick="myFunction()" id="myBtn">Read more</button>
+  
+  <script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+  
+  </body>
+
 <body>
     <div id="content">
-        <div id="sars" style="width:1000px; height:1300px;"></div>
+        <div id="sars" style="width:1000px; height:850px;"></div>
     </div>
 </body>
 
